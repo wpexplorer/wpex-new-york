@@ -97,11 +97,9 @@ add_action( 'wpex_hook_site_footer_inner', 'wpex_get_site_footer_widgets', 10 );
 
 /* Footer After
 -------------------------------------------------------------------------------*/
-add_action( 'wpex_hook_site_footer_after', 'wpex_get_instagram_footer_widgets', 10 );
 add_action( 'wpex_hook_site_footer_after', 'wpex_get_site_footer_bottom', 10 );
 
 
 /* Footer Bottom > Inner
 -------------------------------------------------------------------------------*/
-add_action( 'wpex_hook_site_footer_bottom_inner', 'wpex_get_social_footer_widgets', 10 );
 add_action( 'wpex_hook_site_footer_bottom_inner', 'wpex_get_site_footer_copyright', 20 );

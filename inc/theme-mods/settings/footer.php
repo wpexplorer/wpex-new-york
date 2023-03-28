@@ -33,14 +33,5 @@ $panels['general']['sections']['footer'] = array(
 				'desc' =>  esc_html__( 'Because of how WordPress works if you alter this option you must save the Customizer and refresh the page if you wish to use the added widget areas.', 'wpex-new-york' ),
 			),
 		),
-		array(
-			'id' => 'footer_bottom',
-			'default' => true,
-			'control' => array(
-				'label' => esc_html__( 'Footer Bottom', 'wpex-new-york' ),
-				'type' => 'checkbox',
-				'desc' =>  esc_html__( 'Enable the Footer Bottom section which displays the copyright content and Social Footer widget area.', 'wpex-new-york' ),
-			),
-		),
 	),
 );

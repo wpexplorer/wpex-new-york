@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: New York WordPress Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-27 17:38-0700\n"
-"PO-Revision-Date: 2023-03-27 17:38-0700\n"
+"POT-Creation-Date: 2023-03-27 18:19-0700\n"
+"PO-Revision-Date: 2023-03-27 18:19-0700\n"
 "Last-Translator: Bruno Tritsch - www.wp-traduction.com <bruno@wp-traduction."
 "com>\n"
 "Language-Team: Bruno Tritsch - www.wp-traduction.com <bruno@wp-traduction."
@@ -132,7 +132,7 @@ msgstr "Principal"
 msgid "Mobile Alternative"
 msgstr "Alternative pour mobile"
 
-#: inc/menus.php:16 inc/register-sidebars.php:42
+#: inc/menus.php:16
 msgid "Before Footer"
 msgstr "Avant le pied de page"
 
@@ -157,27 +157,7 @@ msgstr "Colonne latérale - Pages"
 msgid "Will override the Main sidebar for pages only."
 msgstr "Substituera la colonne latérale principale pour les pages uniquement."
 
-#: inc/register-sidebars.php:48
-msgid ""
-"This widget area displays before your footer area. This is a good area to "
-"display an advertisement banner."
-msgstr ""
-
-#: inc/register-sidebars.php:53
-msgid "Social - Footer"
-msgstr "Social - Pied de page"
-
-#: inc/register-sidebars.php:59
-msgid ""
-"Widget area specifically for adding the \"Social Profiles\" to the bottom of "
-"the site under the copyright text, but you can technically add any widgets "
-"you want."
-msgstr ""
-"Zone de widget spécifiquement pour l’ajout les « profils sociaux » au fond "
-"du site sous le texte du droit d’auteur, mais vous pouvez ajouter "
-"techniquement tout widgets que vous voulez."
-
-#: inc/register-sidebars.php:68 inc/theme-mods/settings/footer.php:18
+#: inc/register-sidebars.php:46 inc/theme-mods/settings/footer.php:18
 msgid "Footer"
 msgstr "Pied de page"
 
@@ -301,18 +281,6 @@ msgstr ""
 "En raison du fonctionnement de WordPress si vous modifiez cette option, vous "
 "devez enregistrer le personnalisateur et actualiser la page si vous "
 "souhaitez utiliser les zones de widget ajoutées."
-
-#: inc/theme-mods/settings/footer.php:40
-msgid "Footer Bottom"
-msgstr "Pied de page inférieur"
-
-#: inc/theme-mods/settings/footer.php:42
-msgid ""
-"Enable the Footer Bottom section which displays the copyright content and "
-"Social Footer widget area."
-msgstr ""
-"Activez la section inférieure de pied de page qui affiche le contenu du "
-"copyright et la zone de widget de pied de page social."
 
 #: inc/theme-mods/settings/header.php:24
 msgid "Sticky Menu"
@@ -683,7 +651,7 @@ msgstr "Inférieur droit"
 msgid "Bottom Center"
 msgstr "Inférieur centré"
 
-#: searchform.php:18 searchform.php:19
+#: searchform.php:19
 msgid "Search"
 msgstr "Recherche"
 
@@ -762,37 +730,55 @@ msgstr "Article suivant"
 msgid "You May Also Like"
 msgstr "Vous devriez également aimer"
 
-#: template-parts/scrolltop-button.php:17
-msgid "Top"
-msgstr "Supérieur"
-
 #: template-parts/social-share.php:20
 msgid "Share This Post"
 msgstr "Partager cet article"
-
-#: template-parts/social-share.php:23
-msgid "Share on Twitter"
-msgstr "Partager sur Twitter"
 
 #: template-parts/social-share.php:24
 msgid "Tweet"
 msgstr "Tweet"
 
-#: template-parts/social-share.php:28
-msgid "Share on Facebook"
-msgstr "Partager sur Facebook"
-
-#: template-parts/social-share.php:33
-msgid "Share on Pinterest"
-msgstr "Partager sur Pinterest"
-
 #: template-parts/social-share.php:34
 msgid "Pin it"
 msgstr "Pin it"
 
-#: template-parts/social-share.php:38 template-parts/social-share.php:39
+#: template-parts/social-share.php:39
 msgid "Comment"
 msgstr "Commentaire"
+
+#~ msgid "Social - Footer"
+#~ msgstr "Social - Pied de page"
+
+#~ msgid ""
+#~ "Widget area specifically for adding the \"Social Profiles\" to the bottom "
+#~ "of the site under the copyright text, but you can technically add any "
+#~ "widgets you want."
+#~ msgstr ""
+#~ "Zone de widget spécifiquement pour l’ajout les « profils sociaux » au "
+#~ "fond du site sous le texte du droit d’auteur, mais vous pouvez ajouter "
+#~ "techniquement tout widgets que vous voulez."
+
+#~ msgid "Footer Bottom"
+#~ msgstr "Pied de page inférieur"
+
+#~ msgid ""
+#~ "Enable the Footer Bottom section which displays the copyright content and "
+#~ "Social Footer widget area."
+#~ msgstr ""
+#~ "Activez la section inférieure de pied de page qui affiche le contenu du "
+#~ "copyright et la zone de widget de pied de page social."
+
+#~ msgid "Top"
+#~ msgstr "Supérieur"
+
+#~ msgid "Share on Twitter"
+#~ msgstr "Partager sur Twitter"
+
+#~ msgid "Share on Facebook"
+#~ msgstr "Partager sur Facebook"
+
+#~ msgid "Share on Pinterest"
+#~ msgstr "Partager sur Pinterest"
 
 #~ msgid "Page Settings"
 #~ msgstr "Réglages de la page"

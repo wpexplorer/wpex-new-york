@@ -37,28 +37,6 @@ if ( ! function_exists( 'wpex_register_sidebars' ) ) {
 			'description'   => esc_html__( 'Will override the Main sidebar for pages only.', 'wpex-new-york' ),
 		) );
 
-		// Instagram Footer
-		register_sidebar( array(
-			'name'          => esc_html__( 'Before Footer', 'wpex-new-york' ),
-			'id'            => 'wpex_instagram_footer',
-			'before_widget' => '<div id="%1$s" class="widget %2$s wpex-clr">',
-			'after_widget'  => '</div>',
-			'before_title'  => '<div class="widget-title"><span>',
-			'after_title'   => '</span></div>',
-			'description'   => esc_html__( 'This widget area displays before your footer area. This is a good area to display an advertisement banner.', 'wpex-new-york' ),
-		) );
-
-		// Footer Social Links
-		register_sidebar( array(
-			'name'          => esc_html__( 'Social - Footer', 'wpex-new-york' ),
-			'id'            => 'wpex_social_footer',
-			'before_widget' => '<div id="%1$s" class="widget %2$s wpex-clr">',
-			'after_widget'  => '</div>',
-			'before_title'  => '<div class="widget-title"><span>',
-			'after_title'   => '</span></div>',
-			'description'   => esc_html__( 'Widget area specifically for adding the "Social Profiles" to the bottom of the site under the copyright text, but you can technically add any widgets you want.', 'wpex-new-york' ),
-		) );
-
 		// Get footer columns
 		if ( $cols = wpex_get_footer_widget_columns() ) {
 			$cols = intval( $cols );

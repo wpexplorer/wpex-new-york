@@ -14,10 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-// Return if disabled
-if ( ! wpex_get_theme_mod( 'footer_bottom' ) ) {
-	return;
-} ?>
+?>
 
 <?php
 /**
@@ -34,7 +31,7 @@ do_action( 'wpex_hook_site_footer_bottom_before' ); ?>
 		 * wpex_hook_site_footer_bottom_inner hook.
 		 */
 		do_action( 'wpex_hook_site_footer_bottom_inner' ); ?>
-		
+
 	</div><!-- .wpex-container -->
 
 </div><!-- .wpex-footer-bottom -->

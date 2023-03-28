@@ -26,10 +26,6 @@ function wpex_template_parts() {
 		'main_menu'              => 'template-parts/menus/main',
 		'before_footer_menu'     => 'template-parts/menus/before-footer',
 
-		// Alternate widget areas
-		'widgets_instagram_footer' => 'template-parts/widget-areas/instagram-footer',
-		'widgets_social_footer'    => 'template-parts/widget-areas/social-footer',
-
 		// Site Header
 		'site_header'            => 'template-parts/header/layout',
 		'site_header_branding'   => 'template-parts/header/branding',
@@ -161,24 +157,6 @@ function wpex_get_site_header_media() {
 /*-------------------------------------------------------------------------------*/
 /* - Widget Areas
 /*-------------------------------------------------------------------------------*/
-
-/**
- * Get Instagram Social Widgets
- *
- * @since 1.0.0
- */
-function wpex_get_instagram_footer_widgets() {
-	wpex_get_template_part( 'widgets_instagram_footer' );
-}
-
-/**
- * Get Social Footer Widgets
- *
- * @since 1.0.0
- */
-function wpex_get_social_footer_widgets() {
-	wpex_get_template_part( 'widgets_social_footer' );
-}
 
 /**
  * Get Site Footer Widgets
