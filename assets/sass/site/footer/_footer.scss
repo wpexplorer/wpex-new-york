@@ -1,0 +1,48 @@
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+.wpex-site-footer {
+	background: $site-footer__background;
+	color: $site-footer__color;
+
+	h2, h3, h4, h5, h6 {
+		color: $site-footer__headings__color;
+	}
+
+	table td,
+	table th {
+		border-color: $site-footer__border-color;
+		border-color: $site-footer__border-color-rgba;
+	}
+
+	table thead {
+		background: #333;
+		color: #fff;
+	}
+
+	ul,
+	ul li,
+	li ul {
+		border-color: $site-footer__border-color;
+		border-color: $site-footer__border-color-rgba;
+	}
+
+	a {
+        color: $site-footer__link-color;
+    }
+
+    a:hover {
+        color: $site-footer__link-color-hover;
+        text-decoration: none;
+    }
+
+    ul, ol {
+        margin: 0;
+        padding: 0;
+    }
+
+
+}
+
+@import "widgets";
+@import "bottom";

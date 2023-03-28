@@ -1,0 +1,32 @@
+/* Widgets > Calendar */
+#wp-calendar {
+    font-size: 1em;
+	width: 100%;
+
+	caption {
+		font-size: pem( 12 );
+		color: #fff;
+		background: $accent__background-dark;
+		padding: pem( 10 );
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: bold;
+	}
+
+	thead, tbody, tfoot {
+		font-size: pem( 10 );
+	}
+
+	th, td, tr, thead, tbody {
+		text-align: center;
+	}
+
+	td#prev {
+		text-align: left;
+	}
+
+	td#next {
+		text-align: right;
+	}
+
+}

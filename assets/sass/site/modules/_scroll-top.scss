@@ -1,0 +1,34 @@
+/* Modules > Scroll Top */
+.wpex-site-scroll-top {
+    z-index: 999;
+    position: fixed;
+    visibility: hidden;
+    height: 24px;
+    line-height: 24px;
+    width: 24px;
+    text-align: center;
+    bottom: 14px;
+    right: 14px;
+    background: #fff;
+    color: $body__color-dark;
+    font-size: 21px;
+    @include border-radius( 50% );
+    @include opacity( 0 );
+    @include transition( all .35s ease-in-out );
+
+    .rtl & {
+        right: auto;
+        left: 14px;
+    }
+
+    &.wpex-show {
+        visibility: visible;
+        @include opacity( 0.4 );
+    }
+
+    &:hover {
+        color: $body__color-dark;
+        @include opacity( 1 );
+    }
+
+}

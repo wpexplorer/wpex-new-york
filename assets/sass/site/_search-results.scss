@@ -1,0 +1,19 @@
+/*--------------------------------------------------------------
+## Search Results
+--------------------------------------------------------------*/
+body.search-no-results .wpex-entry-none {
+	font-size: pem( 14 );
+	line-height: 24px;
+	margin-bottom: $elements__bottom-margin;
+	background: $accent__background-gray;
+	border: 1px solid $borders__color;
+	color: #333;
+	padding: pem( 15 );
+	p {
+		margin: 0;
+	}
+	span {
+		text-decoration: underline;
+		color: #000;
+	}
+}

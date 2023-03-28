@@ -1,0 +1,11 @@
+/* Typography > Pre Tag */
+pre {
+	background: #f1f1f1;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: pem( 13 );
+	line-height: 1.6;
+	margin-bottom: $p__margin-bottom;
+	max-width: 100%;
+	overflow: auto;
+	padding: pem( 15 );
+}

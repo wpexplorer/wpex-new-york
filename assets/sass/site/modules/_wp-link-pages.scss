@@ -1,0 +1,18 @@
+/* Modules > Post Links */
+.wpex-wp-link-pages {
+	margin-bottom: $elements__bottom-margin;
+
+	a {
+		@include buttons;
+		
+		&:last-child {
+			float: right;
+		}
+
+		&:first-child {
+			float: left;
+		}
+
+	}
+
+}

@@ -1,0 +1,20 @@
+/* Widgets > Recent Posts */
+.widget_recent_entries {
+
+	li {
+		padding: pem( 6 ) 0;
+		border-bottom: 1px solid $borders__color;
+	}
+
+	li:last-child {
+		border-bottom: none;
+	}
+
+	a {
+		@include transition( all 0.15s );
+		.wpex-site-content &:hover {
+			@include opacity( 0.5 );
+		}
+	}
+
+}

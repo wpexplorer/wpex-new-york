@@ -1,0 +1,162 @@
+/*--------------------------------------------------------------
+### WooCommerce > Checkout
+--------------------------------------------------------------*/
+.woocommerce-checkout .wpex-page-header {
+	display: none;
+}
+
+// Notices
+.woocommerce form.checkout_coupon,
+.woocommerce form.login,
+.woocommerce form.register {
+	border: 0;
+	margin: 0;
+	padding: 0 0 30px;
+}
+
+
+// Coupon
+.woocommerce form.checkout_coupon {
+
+	input,
+	.button {
+		width: 100%;
+		padding-top: 0;
+		padding-bottom: 0;
+		height: 40px;
+	}
+
+	.button {
+		line-height: 40px;
+	}
+
+	.form-row {
+		padding: 0;
+	}
+
+	.form-row-first,
+	.form-row-last {
+		width: 49%;
+		margin: 0;
+		padding: 0;
+	}
+
+}
+
+// Login Notice
+.woocommerce form.login {
+
+	input[type="text"] {
+		width: 100%;
+		padding-top: 0;
+		padding-bottom: 0;
+		height: 40px;
+	}
+
+	.inline {
+		margin-left: 10px;
+		input {
+			margin-right: 3px;
+		}
+	}
+
+	.form-row {
+		padding: 15px 0 0;
+	}
+
+	.form-row-first,
+	.form-row-last {
+		width: 49%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.lost_password {
+		padding: 0;
+		margin: 0;
+		a {
+			color: $body__color;
+			&:hover {
+				@include opacity( 0.65 );
+			}
+		}
+	}
+
+}
+
+// Form
+form.woocommerce-checkout {
+	padding: 30px 0;
+	.col-1, .col-2 {
+		padding-bottom: 30px;
+	}
+}
+
+// Total
+.woocommerce-checkout-review-order-table {
+
+	.order-total .amount {
+		text-decoration: underline;
+	}
+
+	.amount {
+		font-family: $font-family__main;
+	}
+
+}
+
+// Payment methods
+#add_payment_method,
+.woocommerce-cart,
+.woocommerce-checkout {
+
+	#payment {
+		background: none;
+		padding: 30px;
+		border: 1px solid $borders__color;
+		@include border-radius( 0 );
+
+		a {
+			color: $body__color;
+			text-decoration: underline;
+			&:hover {
+				@include opacity( 0.6 );
+			}
+		}
+
+		ul.payment_methods {
+			list-style: none;
+			background: none;
+			padding: 0;
+			margin: 0;
+			border: 0;
+			li {
+				background: none;
+				list-style: none;
+				input {
+					.rtl & {
+						margin: 0 0 0 1em;
+					}
+				}
+			}
+			li:last-child {
+				padding-bottom: 15px;
+			}
+		}
+
+		div.form-row {
+			padding: 0;
+			margin: 0;
+		}
+
+		div.payment_box {
+			background-color: $accent__background-gray;
+			&:before {
+				border: 0;
+			}
+		}
+
+	}
+
+
+}

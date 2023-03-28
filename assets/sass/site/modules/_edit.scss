@@ -1,0 +1,12 @@
+/* Modules > Edit Link */
+.post-edit-link {
+	text-transform: uppercase;
+	margin: 20px 0;
+	font-size: pem( 12 );
+	text-decoration: underline;
+	color: $body__color;
+	@include transition( $transition__speed );
+	&:hover {
+		@include opacity( 0.4 );
+	}
+}

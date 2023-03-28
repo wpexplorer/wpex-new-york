@@ -1,0 +1,46 @@
+/* Post > Related */
+.wpex-related-posts {
+	margin-bottom: 60px - 24px; // remove grid bottom margin
+}
+
+.wpex-related-posts-heading {
+	@include section_heading();
+	text-align: center;
+}
+
+.wpex-related-post {
+
+	img {
+		display: block;
+		margin-bottom: pem( 10 );
+		@include backface-hidden();
+		@include transition( $transition__speed );
+		&:hover {
+			opacity: $images__hover-opacity;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: #222;
+	}
+
+	.wpex-date {
+		display: none;
+    	color: #585858;
+    	font-size: pem( 12 );
+    	font-style: italic;
+	}
+
+	.wpex-title {
+		font-family: $font-family__secondary;
+		font-weight: 600;
+		font-style: italic;
+		font-size: pem( 15 );
+		@include transition( $transition__speed );
+		&:hover {
+			@include opacity( 0.6 );
+		}
+	}
+
+}

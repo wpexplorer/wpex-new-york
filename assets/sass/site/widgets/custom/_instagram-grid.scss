@@ -1,0 +1,18 @@
+/* Widgets > Instagram Grid */
+.wpex-instagram-grid-widget {
+
+	a {
+		display: block;
+		@include backface-hidden();
+		@include transition( $transition__speed );
+		&:hover {
+			@include opacity( $images__hover-opacity );
+		}
+	}
+
+	img {
+		display: block;
+		width: 100%;
+	}
+
+}

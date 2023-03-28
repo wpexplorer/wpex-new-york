@@ -1,0 +1,154 @@
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+.wpex-clr:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    zoom: 1;
+}
+
+body {
+	background: $body__background; /* Fallback for when there is no custom background color defined. */
+	&.rtl {
+		direction: rtl;
+	}
+}
+
+p {
+	margin: 0 0 $p__margin-bottom;
+}
+
+a {
+	color: $link__color;
+	text-decoration: none;
+
+	.wpex-content &:hover {
+		text-decoration: underline;
+	}
+
+}
+
+blockquote, q {
+	clear: both;
+	quotes: "" "";
+
+	&:before,
+	&:after {
+		content: "";
+	}
+}
+
+hr {
+	background-color: $hr__color;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	list-style: none;
+}
+
+.wpex-site-main {
+	ul, ol {
+		margin: 0 0 1.5em $elements__bottom-margin;
+		ul, ol {
+			margin-bottom: 0;
+		}
+	}
+	ul li {
+		list-style: disc;
+	}
+	li {
+		list-style: decimal;
+	}
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+figure {
+	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+table {
+	margin-bottom: $p__margin-bottom;
+}
+
+table td,
+table th,
+table tr {
+	border: 1px solid $tables__border-color;
+	padding: 0.857em;
+	text-align: left;
+	.rtl & {
+		text-align: right;
+	}
+}
+
+table th {
+	font-family: $font-family__main;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: $tables__thead-color;
+	font-size: pem( 11, $body__font-size );
+}
+
+table thead {
+	background: $tables__thead-background;
+	td {
+		font-size: pem( 11, $body__font-size );
+	}
+}
+
+fieldset {
+	border: 1px solid $inputs__border-color;
+	margin: 0 0 $p__margin-bottom;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+	padding: 0 pem( 10 );
+	@include opacity( 0.8 );
+}
+
+.wpex-slider {
+	display: none;
+}
+
+.wpex-clear {
+	clear: both;
+}
+
+.wpex-edit {
+	padding-top: 30px;
+}

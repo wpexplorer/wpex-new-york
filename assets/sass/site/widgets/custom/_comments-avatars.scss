@@ -1,0 +1,56 @@
+/* Widgets > Comments with Avatars */
+.wpex-recent-comments-widget {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		margin: 0;
+		padding: 6px 0;
+	}
+
+	.wpex-avatar {
+		width: 45px;
+		float: left;
+		margin-right: 20px;
+
+		img {
+   			@include fancy-image;
+
+			&:hover {
+				@include opacity( $images__hover-opacity );
+			}
+
+		}
+
+	}
+
+	.wpex-details {
+		overflow: hidden;
+		color: $body__color-light;
+
+		strong {
+			font-weight: 600;
+			color: #000;
+
+			.wpex-site-footer & {
+				color: $site-footer__color;
+			}
+
+		}
+
+		span {
+			font-family: $font-family__secondary;
+		}
+
+		a {
+			color: #000;
+			font-style: italic;
+			.wpex-site-footer & {
+				color: $site-footer__link-color;
+			}
+		}
+
+	}
+
+}

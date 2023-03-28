@@ -1,0 +1,30 @@
+/* Footer > Widgets */
+.wpex-footer-widgets {
+    padding: 50px 0 20px;
+    margin: 0 -30px;
+    font-family: $font-family__secondary;
+
+    .widget {
+        margin-bottom: 30px;
+    }
+
+    .wpex-col {
+        padding: 0 30px;
+        margin-bottom: 0;
+    }
+
+    .widget-title {
+        font-family: $font-family__main;
+        font-size: pem( 13, $site-footer__font-size );
+        text-transform: uppercase;
+        color: $site-footer__widget-title__color;
+        font-weight: bold;
+        margin: 0 0 20px;
+        letter-spacing: 0.5px;
+    }
+
+    .tagcloud a:hover {
+       @include opacity( 1 );
+    }
+
+}

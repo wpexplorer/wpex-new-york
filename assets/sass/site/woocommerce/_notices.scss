@@ -1,0 +1,37 @@
+/*--------------------------------------------------------------
+### WooCommerce > Notices
+--------------------------------------------------------------*/
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message {
+    font-size: pem( 14 );
+	line-height: 24px;
+	margin: 0 0 $elements__bottom-margin !important;
+	background: $accent__background-gray;
+	border: 1px solid $borders__color;
+	color: #333;
+
+	.button {
+	    height: 24px !important;
+	    line-height: 24px !important;
+	    padding: 0 pem( 10 ) !important;
+	}
+
+	&:before {
+		color: inherit;
+	}
+
+	a {
+		color: #000;
+		text-decoration: underline;
+		&:hover {
+			@include opacity( 0.6 );
+		}
+	}
+
+}
+
+.woocommerce-info:before {
+	content: "\f05a";
+	@include font_awesome__css();
+}

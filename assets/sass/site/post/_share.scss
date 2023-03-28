@@ -1,0 +1,67 @@
+/* Post > Share */
+.wpex-post-meta .wpex-social-share {
+    float: right;
+    margin: 12px 0 5px;
+
+    .rtl & {
+        float: left;
+    }
+
+    .wpex-social-share-heading,
+    .wpex-label {
+        display: none;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        display: block;
+        float: left;
+        margin: 0 5px 5px 0;
+
+        .rtl & {
+            float: right;
+            margin: 0 0 5px 5px;
+        }
+
+        &.wpex-twitter a {
+            background: $twitter_color;
+        }
+        &.wpex-facebook a {
+            background: $facebook_color;
+        }
+        &.wpex-pinterest a {
+            background: $pinterest_color;
+        }
+        &.wpex-googleplus a {
+            background: $google_plus_color;
+        }
+    }
+
+    a {
+        display: block;
+        font-size: 13px;
+        color: #fff;
+        background: #999;
+        height: 26px;
+        line-height: 26px;
+        width: 26px;
+        text-align: center;
+        font-weight: bold;
+        @include border-radius( 50% );
+        @include transition( all 0.2s );
+        &:hover {
+            color: #fff;
+            @include opacity( 0.6 );
+        }
+    }
+
+    li:last-child {
+        margin-right: 0;
+    }
+
+}

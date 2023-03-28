@@ -1,0 +1,18 @@
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+.wpex-site-header-wrap {
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    body.wpex-has-wp-custom-header & {
+		padding: 100px 0;
+		margin-bottom: 60px;
+    }
+
+}
+
+@import "branding";
+@import "media";

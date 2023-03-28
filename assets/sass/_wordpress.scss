@@ -1,0 +1,84 @@
+/*--------------------------------------------------------------
+# # WordPress Core
+--------------------------------------------------------------*/
+.sticky { display: block; }
+.bypostauthor { display: block; }
+.wp-smiley { margin: 0; max-height: 1em; }
+#wpstats { display: none }
+
+/* WordPress > Captions */
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+
+	img[class*="wp-image-"] {
+		@include center-block;
+	}
+
+	.wp-caption-text {
+		margin: 0.8075em 0;
+	}
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/* WordPress > Galleries */
+.gallery {
+	margin: 0 -10px;
+}
+
+.gallery-item {
+	display: block;
+	float: left;
+	text-align: center;
+	vertical-align: top;
+	padding: 0 10px;
+	margin: 0 0 20px;
+	
+	.gallery-columns-2 & {
+		max-width: 50%;
+	}
+
+	.gallery-columns-3 & {
+		max-width: 33.33%;
+	}
+
+	.gallery-columns-4 & {
+		max-width: 25%;
+	}
+
+	.gallery-columns-5 & {
+		max-width: 20%;
+	}
+
+	.gallery-columns-6 & {
+		max-width: 16.66%;
+	}
+
+	.gallery-columns-7 & {
+		max-width: 14.28%;
+	}
+
+	.gallery-columns-8 & {
+		max-width: 12.5%;
+	}
+
+	.gallery-columns-9 & {
+		max-width: 11.11%;
+	}
+
+	img {
+		border: none;
+	}
+
+}
+
+.gallery-caption {
+	display: block;
+	font-size: 1em;
+	text-align: center;
+	padding-top: 10px;
+	margin: 0;
+}

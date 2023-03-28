@@ -1,0 +1,33 @@
+/* Widget Areas > Main */
+.wpex-sidebar {
+    font-size: pem( 13 );
+
+    .widget {
+        margin-bottom: 40px
+    }
+
+    .widget_search {
+        border: none;
+        padding: 0;
+    }
+
+    .widget-title {
+        font-size: pem( 11 );
+        color: $color__headings;
+        margin-bottom: pem( 25, 11 );
+        padding-bottom: pem( 15, 11 );
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        border-bottom: 2px solid $borders__color;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    a {
+        color: $body__color;
+    }
+
+}

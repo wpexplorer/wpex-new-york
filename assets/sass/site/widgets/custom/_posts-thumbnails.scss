@@ -1,0 +1,53 @@
+/* Widgets > Posts w/ Thumbnails */
+.wpex-widget-recent-posts {
+
+	li {
+		margin: 0;
+		padding: 6px 0;
+	}
+
+	.wpex-thumbnail {
+		width: 45px;
+		float: left;
+		margin-right: 20px;
+
+		img {
+			@include fancy-image;
+
+			&:hover {
+				@include opacity( $images__hover-opacity );
+			}
+
+			& .wpex-site-footer {
+				padding: 0;
+				@include box-shadow( 0 );
+			}
+
+		}
+
+	}
+
+	.wpex-details {
+		overflow: hidden;
+	}
+
+	.wpex-title {
+		display: block;
+		color: $body__color;
+		@include transition( all 0.15s );
+		font-family: $font-family__secondary;
+
+		.wpex-site-content &:hover {
+			@include opacity( 0.5 );
+		}
+
+		.wpex-site-footer & {
+			color: $site-footer__link-color;
+			&:hover {
+				color: $site-footer__link-color-hover;
+			}
+		}
+
+	}
+
+}

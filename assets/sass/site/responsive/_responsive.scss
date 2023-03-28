@@ -1,0 +1,57 @@
+/*--------------------------------------------------------------
+## Responsive
+--------------------------------------------------------------*/
+.wpex-responsive {
+
+	.wpex-container {
+		max-width: 92%;
+	}
+
+	.wpex-container .wpex-container {
+		max-width: none;
+	}
+
+}
+
+/* Responsive > Embeds */
+iframe,
+embed,
+frame {
+	max-width: 100%;
+}
+
+.wpex-responsive-embed {
+
+	.wpex-site-main & {
+		margin-bottom: $elements__bottom-margin;
+	}
+
+	iframe,
+	embed,
+	frame {
+		display: none;
+	}
+}
+
+.wpex-responsive-embed.wpex-show {
+	iframe,
+	embed,
+	frame {
+		display: block;
+	}
+}
+
+.wpex-post-audio,
+.wpex-loop-entry-audio {
+
+	iframe, embed, frame {
+		width: 100%;
+	}
+
+}
+
+/* Responsive > Media Queries */
+@import "under-959px";
+@import "under-768px";
+@import "under-480px";
+@import "under-320px";

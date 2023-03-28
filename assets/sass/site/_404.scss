@@ -1,0 +1,13 @@
+/*--------------------------------------------------------------
+## 404
+--------------------------------------------------------------*/
+body.error404 .wpex-entry-none {
+	padding: 60px;
+	border: 1px solid $borders__color;
+	.wpex-page-header-title {
+		margin-bottom: 0;
+	}
+	p {
+		color: #555;
+	}
+}

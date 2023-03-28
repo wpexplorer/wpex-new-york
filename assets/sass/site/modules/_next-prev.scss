@@ -1,0 +1,64 @@
+/* Modules > Next/Prev */
+.wpex-post-navigation {
+	padding: pem( 30 ) 0;
+	border-top: 1px solid $borders__color;
+	text-align: center;
+
+	.nav-previous,
+	.nav-next {
+		display: block;
+		width: 48%;
+		strong {
+			display: block;
+		}
+
+	}
+
+	.nav-previous {
+		float: left;
+		.fa {
+			margin-right: pem( 10 );
+			.rtl & {
+				margin-right: 0;
+				margin-left: pem( 10 );
+				&:before {
+					content: "\f105";
+				}
+			}
+		}
+		.rtl & {
+			float: right;
+		}
+	}
+
+	.nav-next {
+		float: right;
+		.fa {
+			margin-left: pem( 10 );
+			.rtl & {
+				margin-left: 0;
+				margin-right: pem( 10 );
+				&:before {
+					content: "\f104";
+				}
+			}
+		}
+		.rtl & {
+			float: left;
+		}
+	}
+
+	a {
+		font-family: $font-family__secondary;
+		color: $body__color;
+		font-size: pem( 14 );
+		.wpex-link {
+			@include transition( $transition__speed );
+		}
+		&:hover .wpex-link {
+			text-decoration: underline;
+			@include opacity( 0.5 );
+		}
+	}
+
+}

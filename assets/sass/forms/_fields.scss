@@ -1,0 +1,62 @@
+/* Forms > Fields */
+input,
+textarea {
+	outline: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	font-family: $font-family__secondary;
+	color: $inputs__color;
+	border: 1px solid $inputs__border-color;
+	padding: pem( 8 );
+	@include appearance( none );
+	@include border-radius( 0 );
+	&:focus {
+		color: $inputs__color-focus;
+	}
+}
+
+select {
+	border: 1px solid $inputs__border-color;
+}
+
+textarea {
+	width: 100%;
+}
+
+// Placeholders
+::-webkit-input-placeholder {
+	color: $inputs__placeholder-color;
+}
+
+:-moz-placeholder {
+	color: $inputs__placeholder-color;
+}
+
+::-moz-placeholder {
+	color: $inputs__placeholder-color;
+}
+
+:-ms-input-placeholder {  
+	color: $inputs__placeholder-color;
+}
+
+// Remove chrome yellow BG
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}

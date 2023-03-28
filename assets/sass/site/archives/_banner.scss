@@ -1,0 +1,59 @@
+/* Archives > Banner */
+.wpex-archive-banner {
+	margin-bottom: 60px;
+	text-align: center;
+	color: #fff;
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+
+	&:before {
+		content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: $accent__background-dark;
+        @include opacity( 0.6 );
+        z-index: 1;
+	}
+	
+	.wpex-table {
+		display: table;
+    	width: 100%;
+    	position: relative;
+    	z-index: 2;
+	}
+
+	.wpex-table-cell {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 120px 30px;
+	}
+
+	h1 {
+		margin: 0;
+		padding: 0;
+		font-size: pem( 34 );
+		font-weight: 100;
+		letter-spacing: 5px;
+		text-transform: uppercase;
+		font-family: $font-family__main;
+	}
+
+	h1, h2 p {
+		color: inherit;
+	}
+
+	.wpex-description {
+		font-size: pem( 16 );
+		font-family: $font-family__secondary;
+
+		p:last-child {
+			margin: 0;
+		}
+
+	}
+
+}

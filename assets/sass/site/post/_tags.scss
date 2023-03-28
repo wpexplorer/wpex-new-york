@@ -1,0 +1,28 @@
+/* Post > Tags */
+.wpex-post-tags {
+    font-family: $font-family__secondary;
+	font-size: pem( 13 );
+	padding-top: 20px;
+    margin-bottom: 50px;
+    color: $body__color-light;
+    letter-spacing: 1px;
+    font-style: italic;
+    @include transition( 0.15s );
+
+    a {
+    	color: #000;
+    	&:hover {
+    		text-decoration: underline;
+    	}
+    }
+
+    .fa {
+        color: #000;
+    	margin-right: pem( 8 );
+        .rtl & {
+            margin-right: 0;
+            margin-left: pem( 8 );
+        }
+    }
+
+}

@@ -1,0 +1,34 @@
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+.wpex-container {
+	width: $site-main__width;
+	margin: 0 auto;
+}
+
+.wpex-site-content {
+	margin-bottom: 80px;
+}
+
+.wpex-site-main {
+	float: left;
+	width: $site-content__width;
+}
+
+.wpex-sidebar {
+	float: right;
+	width: $site-sidebar__width;
+}
+
+body.wpex-full-width .wpex-site-main {
+	width: 100%;
+	max-width: none;
+}
+
+body.wpex-left-sidebar .wpex-site-main {
+	float: right;
+}
+
+body.wpex-left-sidebar .wpex-sidebar {
+	float: left;
+}

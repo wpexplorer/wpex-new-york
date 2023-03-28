@@ -1,0 +1,20 @@
+/*--------------------------------------------------------------
+### WooCommerce > Hide Stuff
+--------------------------------------------------------------*/
+body.wpex-hide-ratings ul.products li.product .star-rating {
+	display: none;
+}
+
+body.wpex-hide-entry-cart-btn ul.products li.product {
+	.button {
+		display: none;
+	}
+}
+
+body.wpex-hide-onsale ul.products li.product .onsale {
+	display: none;
+}
+
+body.wpex-hide-onsale span.onsale {
+	display: none;
+}

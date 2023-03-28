@@ -1,0 +1,19 @@
+/* Header > Media */
+.wp-custom-header {
+
+    img, video, iframe {
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        @include transform ( none );
+    }
+
+    .wp-custom-header-video-button {
+        display: none !important;
+    }
+
+}

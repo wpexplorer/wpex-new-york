@@ -1,0 +1,33 @@
+/* Header > Branding */
+.wpex-site-logo {
+    font-size: pem( 52 );
+    line-height: 1.2;
+    text-transform: uppercase;
+    a {
+        color: #000;
+    }
+}
+
+.wpex-site-text-logo a {
+    font-weight: bold;
+    color: $headings__color;
+    text-decoration: none;
+    letter-spacing: 5px;
+
+    body.wpex-has-wp-custom-header & {
+        color: #fff;
+    }
+}
+
+.wpex-site-text-logo a:hover {
+    text-decoration: none
+}
+
+.wpex-site-header-description {
+    font-family: $font-family__secondary;
+    color: #787878;
+    font-size: pem( 18 );
+    font-style: italic;
+    padding-top: 5px;
+    -webkit-font-smoothing: antialiased;
+}

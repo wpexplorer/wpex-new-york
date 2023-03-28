@@ -1,0 +1,28 @@
+/* Menus > Before Footer */
+.wpex-before-footer-menu {
+	background: $accent__background-gray;
+	color: $body__color;
+	letter-spacing: 3px;
+	text-align: center;
+	font-size: pem( 9 );
+	padding: pem( 20, 9 ) 0;
+
+	li {
+		display: inline-block;
+		text-transform: uppercase;
+		padding: pem( 5, 9 ) pem( 25, 9 );
+	}
+
+	li ul {
+		display: none;
+	}
+
+	a {
+		color: inherit;
+		@include transition( $transition__speed );
+		&:hover {
+			color: $accent__color-red;
+		}
+	}
+
+}

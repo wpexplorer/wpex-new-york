@@ -1,0 +1,18 @@
+/* Widgets > About Me */
+.wpex-about-me-widget {
+	text-align: center;
+
+	.wpex-avatar {
+		display: inline-block;
+		&.wpex-round {
+			width: 150px;
+			height: 150px;
+			@include fancy-image;
+		}
+	}
+
+	.wpex-content {
+		padding-top: pem( 15 );
+	}
+
+}

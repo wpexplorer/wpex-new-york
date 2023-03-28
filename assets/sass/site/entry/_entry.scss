@@ -1,0 +1,138 @@
+/*--------------------------------------------------------------
+## Entry
+--------------------------------------------------------------*/
+.wpex-entry {
+    display: block;
+
+    // Categories
+	.wpex-entry-categories {
+		text-align: center;
+
+		a {
+			font-size: pem( 10 );
+			color: #000;
+			text-transform: uppercase;
+			font-weight: bold;
+			letter-spacing: 1.5px;
+
+			&:hover {
+				color: #000;
+				text-decoration: underline;
+			}
+
+		}
+
+	}
+
+	// Title
+	.wpex-entry-title {
+		font-size: pem( 26 );
+		margin: 0;
+		padding: 2px 0;
+		text-align: center;
+
+		& a:hover {
+			color: inherit;
+		}
+
+	}
+	.wpex-entry-title .fa {
+		margin-right: 0.5em;
+	}
+
+	// Date
+	.wpex-entry-date {
+		padding: 0 0 20px;
+		color: #787878;
+		text-transform: uppercase;
+		font-size: pem(  11 );
+		font-style: italic;
+		text-align: center;
+	}
+
+	// Media
+	.wpex-entry-media {
+		margin-bottom: $elements__bottom-margin;
+		text-align: center;
+
+		img {
+			vertical-align: bottom;
+		}
+
+	}
+
+	// Content
+	.wpex-entry-content {
+		margin-bottom: $elements__bottom-margin;
+		&.wpex-custom-excerpt {
+			text-align: center;
+		}
+	}
+
+	// Social
+	.wpex-social-share {
+		font-size: pem( 14 );
+		padding-top: 10px;
+		text-align: center;
+
+		.wpex-social-share-heading {
+			display: none;
+		}
+
+		.wpex-label {
+			display: none;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			display: inline-block;
+			margin: 0 pem( 15, 14 );
+		}
+
+		a {
+			color: #000;
+			@include transition( all 0.15s );
+
+			&:hover {
+				@include opacity( 0.25 );
+			}
+
+		}
+
+	}
+
+	// Read more
+	.wpex-readmore, .more-link {
+		display: inline-block;
+		font-weight: bold;
+		color: #000;
+		font-style: italic;
+		@include transition( all 0.15s );
+
+		.fa {
+			margin-left: pem( 5 );
+			.rtl & {
+				margin-left: 0;
+				margin-right: pem( 5 );
+				&:before {
+					content: "\f104";
+				}
+			}
+		}
+
+		&:hover {
+			text-decoration: underline;
+			@include opacity( 0.35 );
+		}
+
+	}
+
+}
+
+@import "entry-full";
+@import "entry-left_right";
+@import "entry-grid";

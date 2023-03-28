@@ -1,0 +1,14 @@
+/* Widgets > Tagcloud */
+.tagcloud {
+	font-family: $font-family__secondary;
+	font-style: italic;
+
+    a {
+        @include transition( all $transition__speed );
+        color: $body__color;
+        &:hover{
+            color: $accent__color-red;
+        }
+    }
+
+}

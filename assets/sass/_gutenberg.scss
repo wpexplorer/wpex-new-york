@@ -1,0 +1,51 @@
+/*--------------------------------------------------------------
+# Gutenberg Styles
+--------------------------------------------------------------*/
+
+.wp-block-pullquote {
+    border: 0;
+}
+
+.wp-block-table {
+    width: 100%;
+}
+
+ul.wp-block-gallery {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Buttons
+.wp-block-button__link {
+    color: $buttons__color;
+    background: $buttons__background;
+    font-family: $buttons__font-family;
+    font-size: 11px;
+    padding: $buttons__padding;
+    line-height: $buttons__line-height;
+    font-weight: bold;
+    letter-spacing: $buttons__letter-spacing;
+    text-transform: uppercase;
+    @include border-radius( 0 );
+    @include transition( all $transition__speed );
+
+    &:hover, &:active, &:focus {
+        color: $accent__color-red;
+        background: $buttons__background;
+    }
+}
+
+a.wp-block-button__link {
+    text-decoration: none !important;
+}
+
+// Block seperator
+.wp-block-separator {
+    border: 0;
+    margin-bottom: 1.5em;
+}
+
+// Tables
+.wp-block-table td, .wp-block-table th {
+    border-color: #ddd;
+}

@@ -1,0 +1,114 @@
+// Commons
+$elements__bottom-margin: 30px;
+$images__hover-opacity: 0.8;
+$transition__speed: 0.2s;
+$p__margin-bottom: 20px;
+
+
+
+// Site Widths
+$site-main__width: 1080px;
+$site-content__width: percentage( 740px / $site-main__width );
+$site-sidebar__width: percentage( 280px / $site-main__width );
+
+
+
+// Main Background
+$body__background: #fff;
+
+
+// Main Colors
+$accent__1: #f28c8c; // Alternate possibilities: fbc2dd, ee9e80, b787b9
+$accent__background-gray: #f7f6f7;
+$accent__background-dark: #1f2021;
+$accent__color-dark: #000;
+$accent__color-gray: #777;
+$accent__color-light: #999;
+$accent__color-red: #fe6060;
+
+$hr__color: #ddd;
+$ins__background: #fff9c0;
+
+$screen-reader-background-focus: #f9f9f9;
+$screen-reader-text-color: #21759b;
+$color__headings: #000;
+
+	// Links
+	$link__color: $accent__color-red;
+	$link__color-hover: $accent__color-red;
+	$link__color-two: $link__color;
+
+	// Borders
+	$borders__color: #eee;
+	$borders__color-medium: #e5e5e5;
+	$borders__color-sidebar: #eee;
+	$borders__color-abbr: #666;
+
+
+// Inputs
+$inputs__color: #444;
+$inputs__color-focus: #111;
+$inputs__border-color: #ddd;
+$inputs__placeholder-color: #444;
+
+
+
+// Tables
+$tables__thead-background: #f9f9f9;
+$tables__thead-color: $accent__color-dark;
+$tables__border-color: $borders__color;
+
+
+
+// Typography
+$font-family__main: "Helvetica-Neue", "Helvetica", sans-serif;
+$font-family__secondary: "PT Serif";
+$font-family__terciary: "";
+
+$font__letter-spacing-s: 1px;
+$font__letter-spacing-m: 2px;
+$font__letter-spacing-l: 5px;
+
+	// Body
+	$body__font-family: $font-family__main;
+	$body__color: #000;
+	$body__color-dark: #000;
+	$body__color-light: #484848;
+	$body__font-size: 14px;
+	$body__line-height: 1.5;
+
+	// Headings
+	$headings__font-family: $font-family__secondary;
+	$headings__color: #000;
+	$headings__font-weight: bold;
+	$headings__margin: 0 0 $p__margin-bottom;
+
+
+// Buttons
+$buttons__background: $accent__background-dark;
+$buttons__color: #fff;
+$buttons__font-family: $font-family__main;
+$buttons__font-size: pem( 10, $body__font-size );
+$buttons__padding: 1em 1.3em;
+$buttons__line-height: 1;
+$buttons__letter-spacing: 1px;
+
+
+// Footer Colors
+$site-footer__font-size: $body__font-size;
+$site-footer__background: $accent__background-dark;
+$site-footer__color: #888;
+$site-footer__headings__color: #fff;
+$site-footer__widget-title__color: #fff;
+$site-footer__link-color: #aaa;
+$site-footer__link-color-hover: #fff;
+$site-footer__strong-color: #fff;
+$site-footer__border-color: #fff;
+$site-footer__border-color-rgba: rgba( 255, 255, 255, 0.1 );
+
+
+// Social Colors
+$twitter_color: #1da1f2;
+$facebook_color: #3b5998;
+$pinterest_color: #bd081c;
+$google_plus_color: #dd4b39;

@@ -1,0 +1,53 @@
+/* Entry > Left/Right */
+.wpex-entry.wpex-style-left-right {
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid $borders__color;
+	
+	.wpex-entry-media {
+		float: left;
+		width: 45%;
+		margin-right: 30px;
+		.rtl & {
+			float: right;
+			margin-right: 0;
+			margin-left: 30px;
+		}
+	}
+
+	.wpex-entry-details {
+		overflow: hidden;
+	}
+
+	.wpex-entry-categories {
+		font-size: pem( 13 );
+		text-align: inherit;
+	}
+
+	.wpex-entry-title {
+		font-size: pem( 21 );
+		text-align: inherit;
+	}
+
+	.wpex-entry-content {
+		margin-bottom: 10px;
+		text-align: inherit;
+	}
+
+	.wpex-entry-date {
+		text-align: inherit;
+	}
+
+	.wpex-social-share {
+		padding-top: 10px;
+		text-align: inherit;
+		li {
+			display: inline-block;
+			margin: 0 20px 0 0;
+			.rtl & {
+				margin: 0 0 0 20px;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,73 @@
+/*--------------------------------------------------------------
+### WooCommerce > Account Pages
+--------------------------------------------------------------*/
+.woocommerce-account {
+
+	.woocommerce-MyAccount-navigation {
+		font-family: $font-family__main;
+		float: left;
+		margin-bottom: $elements__bottom-margin;
+
+		ul {
+			margin: 0;
+			padding: 0;
+
+			li {
+				background: none;
+				display: block;
+				width: 100%;
+				font-size: pem( 11 );
+				padding: pem( 8, 11 ) 0;
+				border: 0;
+				margin: 0;
+				border-bottom: 1px solid $borders__color-medium;
+				text-transform: uppercase;
+				letter-spacing: 1.5px;
+				a {
+					display: block;
+					color: #555 !important;
+					font-weight: bold;
+					@include transition( $transition__speed );
+					&:hover {
+						color: #000 !important;
+						text-decoration: none;
+						@include opacity( 1 );
+					}
+					&:after {
+						content: "\f105";
+						margin-left: pem( 7 );
+						position: relative;
+						top: -1px;
+						float: right;
+						@include opacity( 0.65 );
+						@include font_awesome__css;
+					}
+				}
+				&.is-active a {
+					color: #000 !important;
+					@include opacity( 1 );
+				}
+			}
+
+		}
+
+	}
+
+
+	.woocommerce-MyAccount-content {
+		padding-left: 30px;
+		margin-bottom: $elements__bottom-margin;
+	}
+
+	table.my_account_orders {
+		font-size: pem( 12 );
+		.button {
+			padding: pem( 8 ) pem( 12 );
+		}		
+	}
+
+	fieldset {
+		padding: pem( 15 );
+	}
+
+}

@@ -1,0 +1,55 @@
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: pem( 30 );
+	margin-bottom: $elements__bottom-margin;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: pem( 30 );
+	margin-bottom: $elements__bottom-margin;
+}
+
+.aligncenter {
+	clear: both;
+	@include center-block;
+	margin-bottom: $elements__bottom-margin;
+}
+
+.alignnone {
+	margin-bottom: $elements__bottom-margin;
+
+	p & {
+		margin-bottom: 0;
+	}
+
+	img {
+		vertical-align: bottom;
+	}
+	
+}
+
+.textcenter {
+	text-align: center;
+}
+
+.textright {
+	text-align: right;
+}
+
+.textleft {
+	text-align: left;
+}
+
+.floatleft {
+	float: left;
+	}
+
+.floatright {
+	float: right;
+}

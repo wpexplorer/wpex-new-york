@@ -1,0 +1,69 @@
+/* Menus > Dropdowns */
+.wpex-drop-menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		position: relative;
+		list-style: none;
+	}
+
+	> li {
+		float: left;
+		display: block;
+	}
+
+	ul {
+		visibility: hidden;
+		@include opacity( 0 );
+		position: absolute;
+		top: 100%;
+		z-index: 9999;
+		margin: 0;
+	}
+
+	li:hover > ul,
+	li.wpex-touched > ul,
+	li.wpex-active > ul {
+		margin: 0;
+		visibility:
+		visible;
+		@include opacity( 1 );
+	}
+
+	a {
+		display: block;
+		position: relative;
+	}
+
+	ul li {
+		display: block;
+		float: none;
+		position: relative;
+	}
+
+	ul li a {
+		display: block;
+	}
+
+	li ul {
+		min-width: 140px;
+	}
+
+	ul ul {
+		top: 0;
+		left: 100%;
+	}
+
+	.wpex-dropdown-arrow-side {
+		margin-left: 5px;
+		margin-right: 0;
+	}
+
+	.wpex-dropdown-arrow-down {
+		margin-right: 0;
+		margin-left: 10px;
+	}
+
+}

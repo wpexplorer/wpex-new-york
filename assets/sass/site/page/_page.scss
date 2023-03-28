@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+## Page
+--------------------------------------------------------------*/
+.wpex-page-thumbnail {
+	margin-bottom: $elements__bottom-margin;
+	img {
+		display: block;
+	}
+}
+
+// Full width tweaks
+.wpex-full-width {
+
+	.wpex-page-header {
+		text-align: center;
+		margin-bottom: $elements__bottom-margin + 20;
+		padding-bottom: pem( 10 );
+		border-bottom: 2px solid $borders__color;
+
+		h1 {
+			margin: 0;
+			padding: 0;
+			font-size: pem( 24 );
+			font-weight: normal;
+			letter-spacing: 5px;
+			text-transform: uppercase;
+			font-family: $font-family__main;
+			line-height: normal;
+		}
+
+	}
+
+}

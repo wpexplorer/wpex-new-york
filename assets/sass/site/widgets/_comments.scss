@@ -1,0 +1,30 @@
+/* Widgets > Categories */
+ul#recentcomments {
+
+	li {
+		padding: pem( 6 ) 0;
+		border-bottom: 1px solid $borders__color;
+
+		> a {
+			font-family: $font-family__secondary;
+		}
+
+	}
+
+	li:last-child {
+		border-bottom: none;
+	}
+
+	a {
+		@include transition( all 0.15s );
+		&:hover {
+			@include opacity( 0.5 );
+		}
+	}
+
+	.comment-author-link {
+		color: #000;
+		font-weight: 600;
+	}
+
+}

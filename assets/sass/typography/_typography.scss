@@ -1,0 +1,50 @@
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body {
+	color: $body__color;
+	font-family: $body__font-family;
+	font-size: $body__font-size;
+	line-height: $body__line-height;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+address {
+	color: #686868;
+	letter-spacing: 0.5px;
+	font-size: 1em;
+	margin: 0 0 $elements__bottom-margin;
+	line-height: 1.5;
+}
+
+code, kbd, tt, var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: pem( 12 );
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted $borders__color-abbr;
+	cursor: help;
+}
+
+mark, ins {
+	.wpex-site-content & {
+		background: $ins__background;
+	}
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+
+@import "headings";
+@import "pre";
+@import "blockquote";
+@import "wpex-content";

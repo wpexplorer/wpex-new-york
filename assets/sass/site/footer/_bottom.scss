@@ -1,0 +1,20 @@
+/* Footer > Bottom */
+.wpex-footer-bottom {
+	background: #171818;
+	text-align: center;
+	padding: 20px 0;
+	color: #fff;
+	font-size: pem( 8 );
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+
+	a {
+		color: #fff;
+		&:hover {
+			color: $accent__color-red;
+		}
+		
+	}
+
+}

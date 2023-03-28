@@ -1,0 +1,34 @@
+/*--------------------------------------------------------------
+### WooCommerce > Buttons
+--------------------------------------------------------------*/
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+	@include buttons;
+
+	// Hover
+	&:hover,
+	&:focus {
+		@include opacity( 1 );
+	}
+
+	// Disabled
+	&:disabled,
+	&:disabled[disabled],
+	&.disabled {
+		color: #fff;
+		padding: $buttons__padding;
+		@include opacity( 0.2 );
+		background: $buttons__background;
+		&:hover {
+			color: #fff;
+			background: $buttons__background;
+		}
+	}
+
+}

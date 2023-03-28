@@ -1,0 +1,44 @@
+@media only screen and ( max-width: 959px ) {
+    
+    .wpex-responsive {
+
+        .wpex-sidebar {
+            width: 100%;
+            float: none;
+            clear: both;
+            padding: 50px 0 0;
+            max-width: 70%;
+            margin: 0 auto;
+        }
+
+        .wpex-site-main {
+            width: 100%;
+            float: none;
+            max-width: none;
+        }
+
+        .wpex-col.wpex-col-4 {
+            width: 50%;
+        }
+        .wpex-col.wpex-col-4.wpex-count-3 {
+            clear: both;
+        }
+
+        .wpex-site-footer .wpex-row .wpex-col {
+            width: 100%;
+            max-width: 70%;
+            float: none;
+            margin: 0 auto;
+        }
+
+        .wpex-main-menu .wpex-drop-menu {
+            display: none
+        }
+
+        .wpex-main-menu .slicknav_menu {
+            display: block;
+        }
+
+    }
+
+}

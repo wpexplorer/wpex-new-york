@@ -1,0 +1,82 @@
+/*!
+New York Theme Editor Styles
+*/
+
+/** === FUNCTIONS / VARIABLES / MIXINS === */
+@import "functions";
+@import "variables";
+@import "mixins";
+
+/** === Content Width === */
+.wp-block {
+    width: 740px;
+    max-width: 100%;
+
+    @media only screen and (max-width: 959px) {
+        width: 100%;
+    }
+
+    // Only the top level blocks need specific widths, therefore override for every nested block.
+    .wp-block {
+        width: 100%;
+    }
+}
+
+
+/** === Base Typography === */
+@import "typography/typography";
+
+body {
+    font-family: "PT Serif";
+    line-height: 25px;
+}
+
+p {
+    font-size: $body__font-size;
+}
+
+/** === Post Title === */
+
+.editor-post-title__block {
+    font-size: pem( 24 );
+
+    .editor-post-title__input {
+        font-family: $headings__font-family;
+        font-weight: $headings__font-weight;
+        color: $headings__color;
+        font-size: 1em;
+    }
+
+}
+
+/** === Separator === */
+.wp-block-separator {
+    background-color: $hr__color;
+    border: 0;
+    height: 1px;
+    margin-bottom: 1.5em;
+}
+
+/** === Gutenberg blocks === */
+@import "gutenberg";
+
+.wp-block-pullquote blockquote>.block-library-pullquote__content .editor-rich-text__tinymce[data-is-empty=true]::before,
+.wp-block-pullquote blockquote>.editor-rich-text p {
+    font-size: inherit;
+}
+
+.wp-block-pullquote cite,
+.wp-block-pullquote footer,
+.wp-block-pullquote__citation,
+.wp-block-quote__citation {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-size: 0.75em;
+    color: #999;
+    text-transform: none;
+}
+
+.wp-block-quote:not(.is-large):not(.is-style-large) {
+    border: 0;
+}

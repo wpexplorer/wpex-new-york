@@ -1,0 +1,16 @@
+/*--------------------------------------------------------------
+### WooCommerce > Reset tables
+--------------------------------------------------------------*/
+.woocommerce-page {
+	table {
+		padding: 0;
+		margin: 0;
+		td, th, tr {
+			border: 0;
+			padding: 0;
+		}
+		thead {
+			background: inherit;
+		}
+	}
+}

@@ -1,0 +1,128 @@
+// Clear floats
+@mixin clear-after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    zoom: 1;
+}
+
+// Font Size
+@mixin font-size-rem( $sizeValue: 1 ) {
+    font-size: ( $sizeValue * 16 ) * 1px;
+    font-size: $sizeValue * 1rem;
+}
+
+// Hidden backface
+@mixin backface-hidden() {
+    -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+    backface-visibility: hidden;
+}
+
+// Accelerated CSS
+@mixin accelerate-css() {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+// Center Block
+@mixin center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+// Transform
+@mixin transform ( $args ) {
+    -ms-transform: $args;
+    -webkit-transform: $args;
+    transform: $args;
+}
+
+// Box Sizing
+@mixin box-sizing ( $args ) {
+    box-sizing: $args;
+    -webkit-box-sizing: $args;
+    -moz-box-sizing: $args;
+}
+
+
+// Appearance
+@mixin appearance ( $args ) {
+    appearance: none;
+    -webkit-appearance: $args;
+    -moz-appearance: $args;
+}
+
+
+// Slim Text
+@mixin slim-text {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+
+// Slim Text
+@mixin section_heading( $margin_bottom: $elements__bottom-margin ) {
+    font-size: pem( 13 );
+    margin-bottom: $margin_bottom;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+// Transition
+@mixin transition( $args ) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+
+// Opacity
+@mixin opacity( $opacity ) {
+    opacity: $opacity;
+    -moz-opacity: $opacity;
+    -webkit-opacity: $opacity;
+}
+
+
+// Border radius
+@mixin border-radius( $radius ) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+// Fancy Image
+@mixin fancy-image {
+    padding: 2px;
+    @include border-radius( 50% );
+    @include box-shadow( 0 1px 2px rgba( 0, 0, 0, 0.15 ) );
+}
+
+
+// Box Shadow
+@mixin box-shadow( $args ) {
+    -webkit-box-shadow: $args;
+    -moz-box-shadow: $args;
+    box-shadow: $args;
+}
+
+
+// Font Awesome CSS
+@mixin font_awesome__css() {
+    font-family: 'FontAwesome';
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

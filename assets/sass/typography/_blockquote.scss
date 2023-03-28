@@ -1,0 +1,43 @@
+/* Typography > Blockquote */
+blockquote {
+	margin: 0 0 $p__margin-bottom;
+	font-size: pem( 18 );
+	position: relative;
+	font-family: $font-family__secondary; 
+	color: #787878;
+	font-style: italic;
+	padding: 0 pem( 25 );
+
+	p {
+		font-size: inherit;
+	}
+
+	&.left {
+		float: left;
+		margin-left: 0;
+		margin-right: 20px;
+		text-align: right;
+		width: 33%;
+	}
+
+	&.right {
+		float: right;
+		margin-left: 20px;
+		margin-right: 0;
+		text-align: left;
+		width: 33%;
+	}
+
+	p:last-child {
+		margin: 0;
+	}
+
+	cite {
+		display: block;
+		margin-top: 10px;
+		font-style: normal;
+		font-size: 0.75em;
+		color: #999;
+	}
+
+}

@@ -1,0 +1,49 @@
+/* Typography > Headings */
+h1, h2, h3, h4, h5, h6, .wpex-heading {
+	clear: both;
+	font-family: $headings__font-family;
+	font-weight: $headings__font-weight;
+	color: $headings__color;
+	margin: $headings__margin;
+	.wpex-content & a:hover {
+		text-decoration: none;
+	}
+}
+
+h1 {
+	font-size: pem( 24 );
+	margin: 0 0 20px;
+}
+
+h2 {
+	font-size: pem( 22 );
+}
+
+h3 {
+	font-size: pem( 18 );
+}
+
+h4 {
+	font-size: pem( 17 );
+}
+
+h5 {
+	font-size: pem( 16 );
+}
+
+h6 {
+	font-size: pem( 15 );
+}
+
+h1 a, h2 a, h3 a, h4 a, .wpex-heading a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.wpex-post-content,
+.wpex-page-content,
+.wpex-entry-content {
+	h2, h3, h4, h5, h6 {
+		margin: 40px 0 15px;
+	}
+}

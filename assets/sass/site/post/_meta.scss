@@ -1,0 +1,43 @@
+/* Post > Meta */
+.wpex-post-meta {
+    border-top: 1px solid $borders__color;
+    border-bottom: 1px solid $borders__color;
+    margin-bottom: $elements__bottom-margin;
+}
+
+.wpex-post-meta .wpex-post-meta-ul {
+    float: left;
+    color: #585858;
+    font-family: $font-family__secondary;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-style: italic;
+    margin: 18px 0 0;
+    padding: 0;
+
+    .rtl & {
+        float: right;
+    }
+
+    li {
+        margin: 0 pem( 5, 12 ) 0 0;
+        padding: 0;
+        display: block;
+        float: left;
+    }
+
+    .fa {
+        display: none;
+        margin-right: pem( 8 );
+    }
+
+    a {
+        color: #585858;
+        &:hover {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+
+}

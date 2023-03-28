@@ -1,0 +1,57 @@
+/* Forms > Search form */
+input[type="search"],
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none
+}
+
+.wpex-site-searchform {
+    position: relative;
+
+    input[type="search"] {
+        background: none;
+        color: #888;
+        border: 0;
+        border: 2px solid $borders__color;
+        outline: none;
+        padding-left: pem( 12 ); 
+        padding-right: 50px;
+        height: 40px;
+        width: 100%;
+        font-size: 1em;
+        @include transition( all 0.15s ease-in-out );
+        @include border-radius( 0 );
+        font-style: italic;
+    }
+
+    input[type="search"]:focus {
+        font-style: normal;
+        color: $body__color;
+    }
+
+    button {
+        display: block;
+        background: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-size: pem( 13 );
+        color: #aaa;
+        &:hover, &:active, &:focus {
+            background:none;
+            color: #aaa;
+        }
+    }
+
+    .wpex-site-footer & input[type="search"] {
+        border: 0;
+        background: #fff;
+    }
+
+}

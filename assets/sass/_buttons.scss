@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+@mixin buttons {
+	display: inline-block;
+	color: $buttons__color;
+	background: $buttons__background;
+	font-family: $buttons__font-family;
+	font-size: $buttons__font-size;
+	padding: $buttons__padding;
+	line-height: $buttons__line-height;
+	outline: 0;
+	border: 0;
+	font-weight: bold;
+	letter-spacing: $buttons__letter-spacing;
+	text-transform: uppercase;
+	@include border-radius( 0 );
+	@include transition( all $transition__speed );
+
+	&:hover, &:active, &:focus {
+		color: $accent__color-red;
+		background: $buttons__background;
+		@include opacity( 1 );
+	}
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.wpex-button {
+	@include buttons;
+}

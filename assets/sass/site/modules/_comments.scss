@@ -1,0 +1,162 @@
+/* Modules > Comments */
+#comments {
+
+	.wpex-comments-title {
+		@include section_heading;
+		padding-bottom: 4px;
+		border-bottom: 2px solid $borders__color;
+	}
+
+	ul, ol, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.parent ul {
+		margin-left: 30px;
+	}
+
+	// Entry
+	.comment-body {
+		position: relative;
+		padding-left: 45px + 20px; // avatar size + padding
+		margin-bottom: $elements__bottom-margin + 10px;
+		font-family: $font-family__secondary;
+
+		.rtl & {
+			padding-left: 0;
+			padding-right: 45px + 20px;
+		}
+
+		.fn .url {
+			//font-family: $font-family__main;
+			color: $body__color;
+			font-weight: bold;
+			font-style: normal;
+			font-size: pem( 14 );
+			letter-spacing: 0.5px;
+		}
+
+		.comment-meta {
+			margin-bottom: pem( 12 );
+			line-height: normal;
+		}
+
+		.comment-meta, .comment-meta a {
+			font-family: $font-family__main;
+			color: #444;
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
+			font-size: pem( 11 );
+		}
+
+		.avatar {
+			position: absolute;
+			left: 0;
+			top: 0;
+			@include fancy-image;
+			.rtl & {
+				left: auto;
+				right: 0;
+			}
+		}
+
+		.reply {
+			position: relative;
+			margin-top: -10px;
+			font-family: $font-family__secondary;
+			line-height: 1;
+			a {
+				font-weight: bold;
+				//text-transform: uppercase;
+				font-size: pem( 10 );
+				color: $body__color;
+				letter-spacing: 0.5px;
+				color: #888;
+				text-decoration: underline;
+				@include transition( $transition__speed );
+				&:hover {
+					color: #000;
+				}
+			}
+		}
+
+	}
+
+	.logged-in-as {
+		font-size: pem( 12 );
+		a {
+			color: #585858;
+			&:hover {
+				color: #000;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	// Comment form
+	#cancel-comment-reply-link {
+		display: block;
+		color: $body__color;
+		float: right;
+		font-size: 12px;
+		text-decoration: underline;
+		@include transition( $transition__speed );
+		&:hover {
+			color: red;
+		}
+	}
+
+	.comment-respond {
+		padding: 30px 0;
+
+		#reply-title {
+			margin: 0;
+			font-size: pem( 18 );
+		}
+
+		p {
+			margin-bottom: 8px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.comment-notes {
+			margin-bottom: pem( 15 );
+			font-family: $font-family__secondary;
+			font-style: italic;
+		}
+
+	}
+
+	.comment-form-author,
+	.comment-form-email {
+		width: 49%;
+		float: left;
+		input {
+			width: 100%;
+		}
+	}
+
+	.comment-form-email {
+		float: right;
+	}
+
+	.comment-form-url input {
+		width: 100%;
+	}
+
+	.comment-form-cookies-consent {
+		input[type="checkbox"] {
+			margin-right: 10px;
+		}
+		label {
+			font-family: $font-family__secondary;
+			font-style: italic;
+			opacity: 0.8;
+		}
+	}
+
+}

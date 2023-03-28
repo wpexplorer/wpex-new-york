@@ -1,0 +1,86 @@
+/* Modules > Pagination */
+ul.page-numbers {
+	list-style: none;
+	margin: 0;
+	line-height: normal;
+	font-size: pem( 13 );
+	text-align: center;
+
+	li {
+		display: inline-block;
+		margin: 0 pem( 8 );
+		.prev {
+			width: auto;
+			.fa {
+				margin-right: pem( 10 );
+				.rtl & {
+					margin-right: 0;
+					margin-left: pem( 10 );
+					&:before {
+						content: "\f101";
+					}
+				}
+			}
+		}
+		.next {
+			width: auto;
+			.fa {
+				margin-left: pem( 10 );
+				.rtl & {
+					margin-left: 0;
+					margin-right: pem( 10 );
+					&:before {
+						content: "\f100";
+					}
+				}
+			}
+		}
+	}
+
+	a, span {
+		display: inline-block;
+		color: $accent__color-dark;
+		cursor: pointer;
+		height: 24px;
+		line-height: 24px;
+		width: 24px;
+		text-align: center;
+		text-decoration: none;
+		@include transition( all $transition__speed );
+		@include border-radius( 50% );
+	}
+
+	a > span {
+		border: 0
+	}
+
+	a:hover,
+	a:hover span {
+		@include opacity( 0.45 );
+	}
+
+	span.current {
+		color: #fff;
+		background: $accent__background-dark;;
+		text-decoration: none;
+	}
+
+	&:after {
+		clear: both;
+		content: ".";
+		display: block;
+		height: 0;
+		line-height: 0;
+		visibility: hidden;
+	}
+
+}
+
+body.wpex-archive-style-grid .wpex-entries {
+	margin-bottom: 40px;
+}
+
+body.wpex-archive-style-grid .wpex-page-numbers {
+	padding-top: 40px;
+	border-top: 1px solid $borders__color;
+}

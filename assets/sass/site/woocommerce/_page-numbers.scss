@@ -1,0 +1,73 @@
+/*--------------------------------------------------------------
+### WooCommerce > Page Numbers
+--------------------------------------------------------------*/
+.woocommerce nav.woocommerce-pagination {
+	margin-top: 60px;
+    padding-top: 60px;
+    border-top: 1px solid $borders__color;
+    font-size: pem( 13 );
+
+	ul {
+		border: none;
+		display: block;
+		margin: 0;
+
+		li {
+			float: none;
+			border: none;
+			padding: 0;
+			display: inline-block;
+        	margin: 0 14px;
+        	line-height: normal;
+
+			a, span {
+				padding: 0;
+				margin: 0;
+				display: inline-block;
+		        color: $accent__color-dark;
+		        cursor: pointer;
+		        height: 24px;
+		        line-height: 24px;
+		        width: 24px;
+		        text-align: center;
+		        text-decoration: none;
+		        @include transition( all $transition__speed );
+		        @include border-radius( 50% );
+			}
+
+	        .prev {
+	            width: auto;
+	            .fa {
+	                margin-right: pem( 10 );
+	            }
+	        }
+	        .next {
+	            width: auto;
+	            .fa {
+	                margin-left: pem( 10 );
+	            }
+	        }
+
+			// Hover
+			a:hover,
+			a:focus,
+			a:focus span,
+			a:hover span {
+				background: none;
+				color: $accent__color-dark;
+				@include opacity( 0.45 );
+			}
+
+			// Active
+			span.current {
+				color: #fff;
+        		background: $accent__background-dark;
+        		text-decoration: none;
+			}
+
+		}
+
+	}
+
+
+}

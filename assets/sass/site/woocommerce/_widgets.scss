@@ -1,0 +1,234 @@
+/*--------------------------------------------------------------
+### WooCommerce > Widgets
+--------------------------------------------------------------*/
+
+/* WooCommerce > Widgets > Cart */
+.woocommerce .widget_shopping_cart, .woocommerce.widget_shopping_cart {
+
+	.widget_shopping_cart_content {
+		border: 1px solid $borders__color;
+
+		.wpex-site-footer & {
+			border-color: $site-footer__border-color-rgba;
+		}
+
+		.cart_list {
+			padding: 5px 0 15px;
+			li {
+				border-bottom: 1px solid $borders__color;
+				margin: 0;
+				padding: 10px 15px 10px 30px;
+				&.empty {
+					border: 0;
+					padding-bottom: 0;
+					text-align: center;
+					font-size: pem( 10 );
+					text-transform: uppercase;
+					letter-spacing: 1px;
+				}
+				a:hover {
+					text-decoration: underline;
+				}
+				.remove {
+					left: 15px;
+					top: 12px;
+					padding: 0;
+					width: auto;
+					height: auto;
+					line-height: normal;
+					font-size: 12px;
+					color: #000 !important;
+					@include transition( $transition__speed );
+					&:hover {
+						background: none;
+						text-decoration: none;
+						@include opacity( 0.35 );
+					}
+				}
+				dd {
+					padding: 0;
+					margin: 0;
+				}
+				.quantity {
+					@include opacity( 0.6 );
+				}
+				.wpex-site-footer & {
+					border-color: $site-footer__border-color-rgba;
+				}
+			}
+		}
+
+		.total {
+			border: 0;
+			padding: 0 15px;
+			margin: 0 0 5px;
+			.amount {
+				color: $accent__color-red;
+			}
+		}
+
+		.buttons {
+			margin: 0;
+			padding: 0 15px 15px;
+			.button {
+				font-size: 8px;
+			}
+		}
+
+	}
+
+}
+
+/* WooCommerce > Widgets > Price Range */
+.woocommerce .widget_price_filter {
+
+	.ui-slider {
+		.ui-slider-range {
+			background: $accent__background-dark;
+		}
+		.ui-slider-handle {
+			background: $accent__background-dark;
+		}
+	}
+
+	.price_slider_wrapper .ui-widget-content {
+		background: #ddd;
+	}
+
+	.price_slider_amount .button {
+		font-size: $buttons__font-size;
+	}
+
+	.price_slider_amount {
+		@include opacity( 0.6 );
+	}
+
+}
+
+/* WooCommerce > Widgets > Nav, Categories, Recent */
+.woocommerce .widget_layered_nav,
+.woocommerce .widget_product_categories {
+
+	ul li {
+		padding: pem( 6 ) 0;
+		border-bottom: 1px solid $borders__color;
+	}
+
+	ul li:last-child {
+		border-bottom: none;
+	}
+
+	a {
+		@include transition( all 0.15s );
+
+		&:before {
+			content: "\f101";
+			margin-right: 10px;
+			@include transition( all 0.15s );
+			@include font_awesome__css;
+		}
+		
+		.wpex-site-content &:hover {
+			@include opacity( 0.5 );
+		}
+
+	}
+
+	ul li ul {
+		border-top: 1px solid $borders__color;
+		margin-top: pem( 6 );
+
+		a {
+			padding-left: 20px;
+		}
+
+	}
+
+}
+
+.woocommerce .widget_product_categories .cat-parent {
+	padding-bottom: 0;
+}
+
+/* WooCommerce > Widgets > Ratings  */
+.woocommerce .widget_rating_filter ul li {
+	padding: pem( 3 ) 0;
+}
+
+/* WooCommerce > Widgets > Search */
+.widget_product_search {
+
+	button[type="submit"] {
+		display: none;
+	}
+
+	input[type="search"] {
+		position: relative;
+		width: 100%;
+		background: none;
+        color: #888;
+        border: 0;
+        border: 2px solid $borders__color;
+        outline: none;
+        padding-left: pem( 12 ); 
+        padding-right: 50px;
+        height: 40px;
+        width: 100%;
+        font-size: 1em;
+        @include transition( all 0.15s ease-in-out );
+        @include border-radius( 0 );
+        font-style: italic;
+
+        .wpex-site-footer & {
+        	background: #fff;
+        	border: 0;
+        }
+
+	}
+
+}
+
+/* WooCommerce > Widgets > Recent  */
+.woocommerce ul.cart_list,
+.woocommerce ul.product_list_widget {
+
+	li {
+		padding: pem( 10 ) 0;
+		border-bottom: 1px solid $borders__color;
+		font-family: $font-family__secondary;
+		
+		img {
+			@include fancy-image;
+			&:hover {
+				@include opacity( $images__hover-opacity );
+			}
+		}
+
+		.wpex-site-footer & {
+			border-color: $site-footer__border-color-rgba;
+		}
+
+	}
+
+	li:last-child {
+		border-bottom: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+		.wpex-site-footer & {
+			text-decoration: none;
+		}
+	}
+
+	.star-rating {
+		font-size: 10px;
+	}
+
+	.reviewer {
+		font-size: pem( 11 );
+		font-family: $font-family__main;
+		@include opacity( 0.8 );
+	}
+
+}

@@ -1,0 +1,754 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: New York WordPress Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-27 17:38-0700\n"
+"PO-Revision-Date: 2016-07-26 10:42-0800\n"
+"Last-Translator: \n"
+"Language-Team: WPExplorer.com\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Lawpex-Translator: AJ Clarke <wpexplorer@gmail.com>\n"
+"X-Poedit-KeywordsList: esc_html_e;gettext;gettext_noop;__;_e;_n;_nx;"
+"esc_html__\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: inc/wpex-framework/tgmpa\n"
+
+#: comments.php:42
+msgid "This Article Has 1 Comment"
+msgstr ""
+
+#: comments.php:44
+#, php-format
+msgid "This Article Has %s Comments"
+msgstr ""
+
+#: comments.php:48
+msgid "Be the first to comment"
+msgstr ""
+
+#: comments.php:73
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:76
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:79
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:92
+msgid "Comments are now closed."
+msgstr ""
+
+#: inc/blocks-entry.php:16 inc/theme-mods/settings/home.php:25
+msgid "Categories"
+msgstr ""
+
+#: inc/blocks-entry.php:17 inc/blocks-page.php:16 inc/blocks-post.php:17
+#: inc/theme-mods/settings/header.php:18
+msgid "Header"
+msgstr ""
+
+#: inc/blocks-entry.php:18
+msgid "Date"
+msgstr ""
+
+#: inc/blocks-entry.php:19 inc/blocks-page.php:17 inc/blocks-post.php:16
+msgid "Media"
+msgstr ""
+
+#: inc/blocks-entry.php:20 inc/blocks-page.php:18 inc/blocks-post.php:19
+msgid "Content"
+msgstr ""
+
+#: inc/blocks-entry.php:21 template-parts/social-share.php:29
+msgid "Share"
+msgstr ""
+
+#: inc/blocks-page.php:19 inc/blocks-post.php:20
+msgid "Next Page Links"
+msgstr ""
+
+#: inc/blocks-page.php:20 inc/blocks-post.php:24
+msgid "Comments"
+msgstr ""
+
+#: inc/blocks-page.php:21 inc/blocks-post.php:25
+msgid "Edit Link"
+msgstr ""
+
+#: inc/blocks-post.php:18
+msgid "Meta"
+msgstr ""
+
+#: inc/blocks-post.php:21 inc/theme-mods/settings/posts.php:99
+msgid "Tags"
+msgstr ""
+
+#: inc/blocks-post.php:22
+msgid "Post Author"
+msgstr ""
+
+#: inc/blocks-post.php:23
+msgid "Related Posts"
+msgstr ""
+
+#: inc/image-sizes.php:14
+msgid "Entry"
+msgstr ""
+
+#: inc/image-sizes.php:15
+msgid "Single Post"
+msgstr ""
+
+#: inc/image-sizes.php:16
+msgid "Related Entries"
+msgstr ""
+
+#: inc/image-sizes.php:17
+msgid "Pages"
+msgstr ""
+
+#: inc/image-sizes.php:18
+msgid "Home Slider"
+msgstr ""
+
+#: inc/menus.php:14
+msgid "Main"
+msgstr ""
+
+#: inc/menus.php:15
+msgid "Mobile Alternative"
+msgstr ""
+
+#: inc/menus.php:16 inc/register-sidebars.php:42
+msgid "Before Footer"
+msgstr ""
+
+#: inc/more-link.php:14 inc/wpex-framework/helpers.php:802
+#: template-parts/entry/content.php:35
+msgid "read more"
+msgstr ""
+
+#: inc/register-sidebars.php:20
+msgid "Sidebar - Main"
+msgstr ""
+
+#: inc/register-sidebars.php:26
+msgid "Main sidebar displayed across the whole site."
+msgstr ""
+
+#: inc/register-sidebars.php:31
+msgid "Sidebar - Pages"
+msgstr ""
+
+#: inc/register-sidebars.php:37
+msgid "Will override the Main sidebar for pages only."
+msgstr ""
+
+#: inc/register-sidebars.php:48
+msgid ""
+"This widget area displays before your footer area. This is a good area to "
+"display an advertisement banner."
+msgstr ""
+
+#: inc/register-sidebars.php:53
+msgid "Social - Footer"
+msgstr ""
+
+#: inc/register-sidebars.php:59
+msgid ""
+"Widget area specifically for adding the \"Social Profiles\" to the bottom of "
+"the site under the copyright text, but you can technically add any widgets "
+"you want."
+msgstr ""
+
+#: inc/register-sidebars.php:68 inc/theme-mods/settings/footer.php:18
+msgid "Footer"
+msgstr ""
+
+#: inc/theme-mods/register.php:22 inc/woocommerce/inc/woo-theme-mods.php:41
+msgid "Default"
+msgstr ""
+
+#: inc/theme-mods/register.php:31 inc/woocommerce/inc/woo-theme-mods.php:51
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/theme-mods/register.php:32 inc/woocommerce/inc/woo-theme-mods.php:52
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/theme-mods/register.php:33 inc/woocommerce/inc/woo-theme-mods.php:53
+msgid "No Sidebar"
+msgstr ""
+
+#: inc/theme-mods/register.php:38
+msgid "General Theme Settings"
+msgstr ""
+
+#: inc/theme-mods/settings/discussion.php:18
+msgid "Discussion"
+msgstr ""
+
+#: inc/theme-mods/settings/discussion.php:24
+msgid "Comments For Pages"
+msgstr ""
+
+#: inc/theme-mods/settings/discussion.php:32
+msgid "Comments For Posts"
+msgstr ""
+
+#: inc/theme-mods/settings/entries.php:18
+msgid "Entries"
+msgstr ""
+
+#: inc/theme-mods/settings/entries.php:24
+msgid "Entry Style"
+msgstr ""
+
+#: inc/theme-mods/settings/entries.php:27
+msgid "Full"
+msgstr ""
+
+#: inc/theme-mods/settings/entries.php:28
+msgid "Left/right"
+msgstr ""
+
+#: inc/theme-mods/settings/entries.php:29
+msgid "Grid"
+msgstr ""
+
+#: inc/theme-mods/settings/entries.php:37
+msgid "Grid Columns"
+msgstr ""
+
+#: inc/theme-mods/settings/entries.php:51
+msgid "Grid Layout Mode"
+msgstr ""
+
+#: inc/theme-mods/settings/entries.php:54
+msgid "Fit Rows"
+msgstr ""
+
+#: inc/theme-mods/settings/entries.php:55
+msgid "Masonry"
+msgstr ""
+
+#: inc/theme-mods/settings/entries.php:63
+msgid "Entry Displays?"
+msgstr ""
+
+#: inc/theme-mods/settings/entries.php:66
+msgid "Custom Excerpt"
+msgstr ""
+
+#: inc/theme-mods/settings/entries.php:67
+msgid "Full Content"
+msgstr ""
+
+#: inc/theme-mods/settings/entries.php:75
+msgid "Entry Excerpt Length"
+msgstr ""
+
+#: inc/theme-mods/settings/entries.php:77
+msgid "How many words to display per excerpt"
+msgstr ""
+
+#: inc/theme-mods/settings/entries.php:85
+msgid "Entry Thumbnail"
+msgstr ""
+
+#: inc/theme-mods/settings/entries.php:93
+msgid "Entry Embeds"
+msgstr ""
+
+#: inc/theme-mods/settings/entries.php:95
+msgid ""
+"Display's your video/audio embed on the homepage and archives instead of the "
+"featured image."
+msgstr ""
+
+#: inc/theme-mods/settings/footer.php:24
+msgid "Footer Widgets Columns"
+msgstr ""
+
+#: inc/theme-mods/settings/footer.php:27 inc/theme-mods/settings/home.php:23
+msgid "None - Disable"
+msgstr ""
+
+#: inc/theme-mods/settings/footer.php:33
+msgid ""
+"Because of how WordPress works if you alter this option you must save the "
+"Customizer and refresh the page if you wish to use the added widget areas."
+msgstr ""
+
+#: inc/theme-mods/settings/footer.php:40
+msgid "Footer Bottom"
+msgstr ""
+
+#: inc/theme-mods/settings/footer.php:42
+msgid ""
+"Enable the Footer Bottom section which displays the copyright content and "
+"Social Footer widget area."
+msgstr ""
+
+#: inc/theme-mods/settings/header.php:24
+msgid "Sticky Menu"
+msgstr ""
+
+#: inc/theme-mods/settings/header.php:31
+msgid "Custom Logo"
+msgstr ""
+
+#: inc/theme-mods/settings/header.php:38
+msgid "Custom Retina Logo"
+msgstr ""
+
+#: inc/theme-mods/settings/header.php:46
+msgid "Display Site Description?"
+msgstr ""
+
+#: inc/theme-mods/settings/home.php:24
+msgid "Recent Posts"
+msgstr ""
+
+#: inc/theme-mods/settings/home.php:36
+msgid "Home"
+msgstr ""
+
+#: inc/theme-mods/settings/home.php:42
+msgid "Homepage Slider Content"
+msgstr ""
+
+#: inc/theme-mods/settings/home.php:45
+msgid ""
+"In order for your slider to look good it is best if all the images are the "
+"same size. If your featured images vary in sizes be sure to go to the Image "
+"Sizes tab in the customizer to enter your custom width and height for your "
+"slider images and then regenerate your thumbnails."
+msgstr ""
+
+#: inc/theme-mods/settings/home.php:52
+msgid "Homepage Slider Count"
+msgstr ""
+
+#: inc/theme-mods/settings/home.php:54
+msgid ""
+"Minimum and recommended number is 6. If you do not have at least 6 unique "
+"posts to display the carousel will repeat the same item because of the "
+"infinite loop function of the carousel. You can always disable the carousel "
+"until your blog has enough content to display it nicely."
+msgstr ""
+
+#: inc/theme-mods/settings/home.php:62
+msgid "Exclude Posts From Main Loop?"
+msgstr ""
+
+#: inc/theme-mods/settings/home.php:64
+msgid ""
+"Check this box to exclude posts included in the slider from the homepage "
+"main loop."
+msgstr ""
+
+#: inc/theme-mods/settings/home.php:71
+msgid "Disable Slider on Paginated Pages?"
+msgstr ""
+
+#: inc/theme-mods/settings/home.php:73
+msgid ""
+"Check this box to display the slider on the first page of the homepage only "
+"and not when clicking the next and previous post links."
+msgstr ""
+
+#: inc/theme-mods/settings/home.php:79
+msgid "Custom Code"
+msgstr ""
+
+#: inc/theme-mods/settings/home.php:81
+msgid "HTML and shortcodes allowed."
+msgstr ""
+
+#: inc/theme-mods/settings/image-sizes.php:20
+msgid "False"
+msgstr ""
+
+#: inc/theme-mods/settings/image-sizes.php:21
+msgid ""
+"If you alter any image sizes you will have to regenerate your thumbnails."
+msgstr ""
+
+#: inc/theme-mods/settings/image-sizes.php:33
+msgid "Image Width"
+msgstr ""
+
+#: inc/theme-mods/settings/image-sizes.php:42
+msgid "Image Height"
+msgstr ""
+
+#: inc/theme-mods/settings/image-sizes.php:51
+msgid "Crop"
+msgstr ""
+
+#: inc/theme-mods/settings/image-sizes.php:61
+msgid "Image Sizes"
+msgstr ""
+
+#: inc/theme-mods/settings/image-sizes.php:62
+msgid ""
+"By default this theme does not crop any images so you can customize your "
+"settings first and prevent unnecessary image cropping. Below you will find "
+"all the settings needed to crop the images on your site. Be sure to install "
+"a regenerate plugin so you can regenerate your thumbnails whenvever you "
+"alter these values."
+msgstr ""
+
+#: inc/theme-mods/settings/layouts.php:18
+msgid "Layouts"
+msgstr ""
+
+#: inc/theme-mods/settings/layouts.php:19
+msgid ""
+"These are the default layouts for your site. You can always change the "
+"layout on a per post or per page basis via the meta settings."
+msgstr ""
+
+#: inc/theme-mods/settings/layouts.php:25
+msgid "Enable Responsive Design"
+msgstr ""
+
+#: inc/theme-mods/settings/layouts.php:33
+msgid "Homepage Layout"
+msgstr ""
+
+#: inc/theme-mods/settings/layouts.php:42
+msgid "Archives Layout"
+msgstr ""
+
+#: inc/theme-mods/settings/layouts.php:45
+msgid "Categories, tags, author...etc"
+msgstr ""
+
+#: inc/theme-mods/settings/layouts.php:53
+msgid "Search Layout"
+msgstr ""
+
+#: inc/theme-mods/settings/layouts.php:62
+msgid "Post Layout"
+msgstr ""
+
+#: inc/theme-mods/settings/layouts.php:71
+msgid "Page Layout"
+msgstr ""
+
+#: inc/theme-mods/settings/posts.php:18
+msgid "Posts"
+msgstr ""
+
+#: inc/theme-mods/settings/posts.php:24
+msgid "Post Thumbnail"
+msgstr ""
+
+#: inc/theme-mods/settings/posts.php:32
+msgid "Post Meta"
+msgstr ""
+
+#: inc/theme-mods/settings/posts.php:40
+msgid "Post Tags"
+msgstr ""
+
+#: inc/theme-mods/settings/posts.php:48
+msgid "Post Social Share"
+msgstr ""
+
+#: inc/theme-mods/settings/posts.php:57
+msgid "Post Author Box"
+msgstr ""
+
+#: inc/theme-mods/settings/posts.php:66
+msgid "Post Next/Previous"
+msgstr ""
+
+#: inc/theme-mods/settings/posts.php:74
+msgid "Post Related"
+msgstr ""
+
+#: inc/theme-mods/settings/posts.php:82
+msgid "Post Related Columns"
+msgstr ""
+
+#: inc/theme-mods/settings/posts.php:96
+msgid "Relate Posts by"
+msgstr ""
+
+#: inc/theme-mods/settings/posts.php:100
+msgid "Category"
+msgstr ""
+
+#: inc/theme-mods/settings/posts.php:101
+msgid "Random"
+msgstr ""
+
+#: inc/theme-mods/settings/posts.php:110
+msgid "Post Related: Count"
+msgstr ""
+
+#: inc/theme-mods/settings/search.php:18
+msgid "Search Results"
+msgstr ""
+
+#: inc/theme-mods/settings/search.php:24
+msgid "Search posts only."
+msgstr ""
+
+#: inc/theme-mods/settings/site-widths.php:19
+msgid "Site Widths"
+msgstr ""
+
+#: inc/theme-mods/settings/site-widths.php:24
+msgid "Container Width"
+msgstr ""
+
+#: inc/theme-mods/settings/site-widths.php:26
+#: inc/theme-mods/settings/site-widths.php:35
+#: inc/theme-mods/settings/site-widths.php:43
+#: inc/theme-mods/settings/site-widths.php:51
+msgid "Default:"
+msgstr ""
+
+#: inc/theme-mods/settings/site-widths.php:32
+msgid "Container Max Width Percent"
+msgstr ""
+
+#: inc/theme-mods/settings/site-widths.php:41
+msgid "Content Area Width"
+msgstr ""
+
+#: inc/theme-mods/settings/site-widths.php:49
+msgid "Sidebar Width"
+msgstr ""
+
+#: inc/woocommerce/inc/woo-onsale-badge.php:18
+msgid "Sale"
+msgstr ""
+
+#: inc/woocommerce/inc/woo-pagination-args.php:18
+#: template-parts/archives/pagination.php:43 template-parts/post/gallery.php:39
+#: template-parts/wp-link-pages.php:22
+msgid "Previous"
+msgstr ""
+
+#: inc/woocommerce/inc/woo-pagination-args.php:19
+#: template-parts/archives/pagination.php:44 template-parts/post/gallery.php:40
+#: template-parts/wp-link-pages.php:21
+msgid "Next"
+msgstr ""
+
+#: inc/woocommerce/inc/woo-register-sidebars.php:20
+#: inc/woocommerce/inc/woo-theme-mods.php:58
+msgid "WooCommerce"
+msgstr ""
+
+#: inc/woocommerce/inc/woo-theme-mods.php:64
+msgid "Shop"
+msgstr ""
+
+#: inc/woocommerce/inc/woo-theme-mods.php:70
+#: inc/woocommerce/inc/woo-theme-mods.php:128
+msgid "Layout"
+msgstr ""
+
+#: inc/woocommerce/inc/woo-theme-mods.php:79
+msgid "Products Per Page"
+msgstr ""
+
+#: inc/woocommerce/inc/woo-theme-mods.php:87
+msgid "Columns"
+msgstr ""
+
+#: inc/woocommerce/inc/woo-theme-mods.php:96
+msgid "Hide Entry Ratings"
+msgstr ""
+
+#: inc/woocommerce/inc/woo-theme-mods.php:104
+msgid "Hide Entry Add To Cart Button"
+msgstr ""
+
+#: inc/woocommerce/inc/woo-theme-mods.php:112
+msgid "Hide Onsale Badge"
+msgstr ""
+
+#: inc/woocommerce/inc/woo-theme-mods.php:122
+msgid "Products"
+msgstr ""
+
+#: inc/woocommerce/inc/woo-theme-mods.php:137
+msgid "Related Products Count"
+msgstr ""
+
+#: inc/woocommerce/inc/woo-theme-mods.php:145
+msgid "Related & Up-Sell Products Columns"
+msgstr ""
+
+#: inc/woocommerce/inc/woo-theme-mods.php:156
+msgid "Cart"
+msgstr ""
+
+#: inc/woocommerce/inc/woo-theme-mods.php:162
+msgid "Redirect Empty Cart to Shop?"
+msgstr ""
+
+#: inc/wpex-framework/dashboard-thumbnails.php:55
+msgid "Featured Image"
+msgstr ""
+
+#: inc/wpex-framework/helpers.php:272
+msgid "Top Left"
+msgstr ""
+
+#: inc/wpex-framework/helpers.php:273
+msgid "Top Right"
+msgstr ""
+
+#: inc/wpex-framework/helpers.php:274
+msgid "Top Center"
+msgstr ""
+
+#: inc/wpex-framework/helpers.php:275
+msgid "Center Left"
+msgstr ""
+
+#: inc/wpex-framework/helpers.php:276
+msgid "Center Right"
+msgstr ""
+
+#: inc/wpex-framework/helpers.php:277
+msgid "Center Center"
+msgstr ""
+
+#: inc/wpex-framework/helpers.php:278
+msgid "Bottom Left"
+msgstr ""
+
+#: inc/wpex-framework/helpers.php:279
+msgid "Bottom Right"
+msgstr ""
+
+#: inc/wpex-framework/helpers.php:280
+msgid "Bottom Center"
+msgstr ""
+
+#: searchform.php:18 searchform.php:19
+msgid "Search"
+msgstr ""
+
+#: template-parts/edit.php:17
+msgid "Edit this"
+msgstr ""
+
+#: template-parts/entry/meta.php:58 template-parts/post/meta.php:65
+msgid "0 Comments"
+msgstr ""
+
+#: template-parts/entry/meta.php:58 template-parts/post/meta.php:65
+msgid "1 Comment"
+msgstr ""
+
+#: template-parts/entry/meta.php:58 template-parts/post/meta.php:65
+msgid "% Comments"
+msgstr ""
+
+#: template-parts/entry/none.php:26
+msgid "There aren't any posts currently published on this site."
+msgstr ""
+
+#: template-parts/entry/none.php:30
+msgid "This author hasn't written any posts yet."
+msgstr ""
+
+#: template-parts/entry/none.php:34
+msgid "Sorry, but nothing matched your search terms"
+msgstr ""
+
+#: template-parts/entry/none.php:38
+msgid "There aren't any posts currently published in this category."
+msgstr ""
+
+#: template-parts/entry/none.php:42
+msgid "There aren't any posts currently published under this taxonomy."
+msgstr ""
+
+#: template-parts/entry/none.php:46
+msgid "There aren't any posts currently published under this tag."
+msgstr ""
+
+#: template-parts/entry/none.php:50
+msgid ""
+"Unfortunately, the page you are looking for can not be found. You can use "
+"the  search form below to try and find what you were looking for."
+msgstr ""
+
+#: template-parts/entry/none.php:56
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for."
+msgstr ""
+
+#: template-parts/post/author.php:29
+msgid "Visit Author Page"
+msgstr ""
+
+#: template-parts/post/author.php:35
+msgid "Article by"
+msgstr ""
+
+#: template-parts/post/next-prev.php:24
+msgid "Previous Article"
+msgstr ""
+
+#: template-parts/post/next-prev.php:25
+msgid "Next Article"
+msgstr ""
+
+#: template-parts/post/related.php:84
+msgid "You May Also Like"
+msgstr ""
+
+#: template-parts/scrolltop-button.php:17
+msgid "Top"
+msgstr ""
+
+#: template-parts/social-share.php:20
+msgid "Share This Post"
+msgstr ""
+
+#: template-parts/social-share.php:23
+msgid "Share on Twitter"
+msgstr ""
+
+#: template-parts/social-share.php:24
+msgid "Tweet"
+msgstr ""
+
+#: template-parts/social-share.php:28
+msgid "Share on Facebook"
+msgstr ""
+
+#: template-parts/social-share.php:33
+msgid "Share on Pinterest"
+msgstr ""
+
+#: template-parts/social-share.php:34
+msgid "Pin it"
+msgstr ""
+
+#: template-parts/social-share.php:38 template-parts/social-share.php:39
+msgid "Comment"
+msgstr ""

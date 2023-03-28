@@ -1,0 +1,28 @@
+/* Widgets > Recent Posts */
+.widget_pages {
+	text-align: center;	
+
+	li {
+		padding: pem( 2 ) 0;
+
+		&.menu-item-has-children {
+			padding-bottom: 0;
+		}
+
+	}
+
+	li:last-child {
+		border-bottom: none;
+	}
+
+	a {
+		text-decoration: underline;
+		@include transition( all 0.15s );
+
+		.wpex-site-content &:hover {
+			color: $accent__color-red;
+		}
+
+	}
+
+}

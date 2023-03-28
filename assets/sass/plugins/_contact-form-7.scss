@@ -1,0 +1,50 @@
+/* Plugins > Contact Form 7 */
+.wpcf7 {
+
+    p {
+        margin: 0 0 15px
+    }
+
+    br {
+        display: none;
+    }
+
+    .wpcf7-form-control-wrap {
+        display: block;
+        margin-top: 5px;
+        position: relative;
+    }
+
+    .screen-reader-response {
+        display: none;
+    }
+
+}
+
+.wpcf7-validation-errors {
+    margin: 25px 0 0
+}
+
+.wpcf7-not-valid-tip {
+    padding-top: 5px;
+    font-size: pem( 12 );
+    clear: both;
+    display: block;
+    font-style: italic;
+    color: red;
+}
+
+input.wpcf7-not-valid {
+    border: 1px dotted red !important;
+}
+
+.wpcf7-response-output {
+    display: none;
+    padding: pem( 10 );
+    border: 0;
+    font-size: 1em;
+    background: $accent__background-gray;
+    border: 1px solid $borders__color;
+    color: #333;
+    text-align: center;
+}

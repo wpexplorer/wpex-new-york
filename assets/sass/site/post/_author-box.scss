@@ -1,0 +1,68 @@
+/* Post > Author Box */
+.wpex-author-box {
+	position: relative;
+	font-family: $font-family__secondary;
+	border-top: 1px solid $borders__color;
+	border-bottom: 1px solid $borders__color;
+	padding: pem( 20 ) 0;
+	padding-left: 115px;
+	margin-bottom: 60px;
+
+	.rtl & {
+		padding-left: 0;
+		padding-right: 115px;
+	}
+
+	.wpex-avatar {
+		position: absolute;
+		left: 0;
+		top: pem( 20 );
+
+		.rtl & {
+			right: 0;
+			left: auto;
+		}
+
+		img {
+			display: block;
+			@include fancy-image;
+
+			&:hover {
+				@include opacity( $images__hover-opacity );
+			}
+
+			& .wpex-site-footer {
+				padding: 0;
+				@include box-shadow( 0 );
+			}
+		}
+
+	}
+
+	.wpex-heading {
+		margin-bottom: 10px;
+		font-size: pem( 17 );
+	}
+
+	.wpex-social {
+		margin-top: -5px;
+		font-size: pem( 13 );
+
+		a {
+			display: block;
+			float: left;
+			margin: 0 18px 5px 0;
+			color: $body__color;
+			@include transition( all 0.15s );
+			&:hover {
+				@include opacity( 0.35 );
+			}
+			.rtl & {
+				float: right;
+				margin: 0 0 5px 18px;
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,169 @@
+$menu__height: 45px;
+$background: $accent__background-dark;
+$link__color: #fff;
+
+/* Menus > Main */
+.wpex-main-menu {
+	background: $background;
+	text-align: center;
+	font-size: pem( 10 );
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+	.wpex-drop-menu > li {
+		display: inline-block;
+		float: none;
+		height: $menu__height;
+		line-height: $menu__height;
+		padding: 0 pem( 20, 10 );
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+
+		&.menu-item-has-children > a:after {
+			content: "\f107";
+			margin-left: pem( 7 );
+			position: relative;
+			top: -1px;
+			@include font_awesome__css;
+		}
+
+	}
+
+	.wpex-drop-menu a {
+		display: block;
+		color: $link__color;
+		@include transition( all .15s );
+	}
+
+	.wpex-drop-menu a:hover {
+		@include opacity( 0.6 );
+		text-decoration: none;
+	}
+
+	// Dropdowns
+	.wpex-drop-menu {
+
+		.sub-menu {
+			background: $background;
+			padding: 0.8em 0;
+
+			.sub-menu {
+				margin-top: -0.8em;
+			}
+
+		}
+
+		> li > .sub-menu {
+			left: 50%;
+			width: 200px;
+			min-width: 200px;
+			margin-left: -100px;
+		}
+
+		.sub-menu li {
+			height: auto;
+			line-height: 1.5;
+
+			&.menu-item-has-children > a:after {
+				content: "\f105";
+				margin-left: pem( 7 );
+				position: relative;
+				top: -1px;
+				@include font_awesome__css;
+				.rtl & {
+					margin-left: 0;
+					margin-right: pem( 7 );
+				}
+			}
+
+		}
+
+		.sub-menu a {
+			padding: 0.8em 1.2em;
+		}
+
+	}
+
+	// Mobile menu
+	.slicknav_menu {
+		display: none;
+		text-align: left;
+		position: relative;
+		z-index: 99;
+		height: $menu__height;
+		font-size: pem( 16 );
+
+		.rtl & {
+			text-align: right;
+		}
+
+		.slicknav_btn {
+			display: block;
+			float: left;
+			height: $menu__height;
+			font-size: 16px;
+
+			.slicknav_icon {
+				margin-top: 8px;
+			}
+
+			.rtl & {
+				float: right;
+			}
+
+		}
+
+		.slicknav_icon-bar {
+			background-color: $link__color;
+		}
+
+		.slicknav_nav {
+			background: $background;
+			a {
+				color: $link__color;
+				@include transition( $transition__speed );
+				&:hover {
+					background: rgba( 255, 255, 255, 0.1 );
+				}
+			}
+		}
+
+		.menu-item-type-woocommerce-cart {
+			display: none;
+		}
+
+	}
+
+	// Mobile cart menu
+	.wpex-menu-cart-mobile {
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: $menu__height;
+		line-height: $menu__height;
+		z-index: 2;
+
+		a {
+			color: $link__color;
+		}
+
+		.rtl & {
+			right: auto;
+			left: 0;
+		}
+
+	}
+
+}
+
+// Sticky Menu
+@media only screen and ( min-width: 960px ) {
+	.wpex-has-sticky-menu {
+		.wpex-main-menu {
+			position: sticky;
+			top: 0;
+			z-index: 1002;
+		}
+	}
+}

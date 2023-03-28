@@ -1,0 +1,144 @@
+/*--------------------------------------------------------------
+### WooCommerce > Shop
+--------------------------------------------------------------*/
+.woocommerce .woocommerce-ordering,
+.woocommerce .woocommerce-result-count {
+	display: none;
+	margin-bottom: $elements__bottom-margin;
+}
+
+.tax-product_cat, .tax-product_tag, .single-product {
+
+	.wpex-site-content {
+		margin-bottom: 40px;
+	}
+
+}
+
+/* Shop > Product */
+.woocommerce ul.products {
+	position: relative;
+	padding: 0;
+	margin-bottom: -( 30 + 10 ) + px; // Add inner product elements bottom margin
+
+	body.single-post & {
+		margin: 0;
+		padding: 0;
+		li.product {
+			margin-bottom: $p__margin-bottom - 10px; // subtract price button margin
+		}
+	}
+
+	li.product {
+		text-align: center;
+		font-family: $font-family__main;
+		margin-bottom: $elements__bottom-margin;
+
+		a {
+
+			// Image
+			img {
+				border: 1px solid $borders__color;
+				margin: 0;
+				padding: 0;
+				@include transition( $transition__speed );
+				&:hover {
+					@include opacity( $images__hover-opacity );
+				}
+
+			}
+
+		}
+
+		// Title
+		.woocommerce-loop-product__title,
+		.woocommerce-loop-category__title {
+			font-size: pem( 13 );
+			font-family: $font-family__main;
+			font-weight: 600;
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
+			padding: pem( 15 ) 0 pem( 5 );
+		}
+
+		// Stars
+		.star-rating {
+			float: none;
+			display: block;
+			margin: 0 auto pem( 10 );
+			color: #aaa;
+		}
+
+		// Price
+		.price {
+			color: #787878;
+			font-size: pem( 12 );
+			margin: 0 auto pem( 10 );
+			line-height: normal;
+
+			del {
+				display: inline-block;
+				margin-right: 5px;
+			}
+
+			ins {
+				font-size: 1.1em;
+				font-weight: normal;
+			}
+
+		}
+
+		// On sale
+		.onsale {
+			z-index: 10;
+			min-height: 0;
+			min-width: 0;
+			height: 50px;
+			width: 50px;
+			line-height: 50px;
+			top: 10px;
+			right: 10px;
+			margin: 0;
+			padding: 0;
+			font-size: pem( 11 );
+			background: #999;
+			text-transform: uppercase;
+			.rtl & {
+				right: auto;
+				left: 10px;
+			}
+		}
+
+		// Button
+		.button {
+			margin: pem( 10 ) 0 0;
+		}
+
+		// Add to cart button
+		.add_to_cart_button.loading:after {
+			top: 50%;
+			height: 12px;
+			line-height: 12px;
+			margin-top: -6px;
+			padding: 0;
+		}
+
+		// Hide added to cart link
+		.added_to_cart {
+			display: none;
+		}
+
+		// Sale edits
+		&.sale ins {
+			color: $accent__color-red;
+		}
+
+		// Mark
+		mark {
+			background: none;
+		}
+
+	}
+
+
+}

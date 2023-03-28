@@ -1,0 +1,156 @@
+/*--------------------------------------------------------------
+### WooCommerce > Cart
+--------------------------------------------------------------*/
+.woocommerce-cart {
+
+	.wpex-page-header {
+		display: none;
+	}
+
+	.cross-sells > h2,
+	.cart_totals > h2 {
+		margin: 0 0 pem( 15 );
+	}
+
+	table .amount {
+		font-family: $font-family__main;
+	}
+
+}
+
+.woocommerce table.shop_table {
+	margin-bottom: 60px;
+	border: 0;
+	border-collapse: collapse;
+
+	.quantity {
+		input.qty {
+			height: 24px;
+			width: 28px;
+		}
+
+		.minus, .plus {
+			height: 24px;
+			line-height: 24px;
+			width: 24px;
+		}
+	}
+
+	a:not(.button) {
+		color: inherit;
+	}
+
+	.product-thumbnail {
+		text-align: center;
+		img {
+			@include fancy-image;
+			width: 40px;
+			&:hover {
+				@include opacity( $images__hover-opacity );
+			}
+		}
+	}
+
+	.product-remove {
+		text-align: center;
+		a.remove {
+			display: inline-block;
+			color: #000 !important;
+			@include transition( $transition__speed );
+			&:hover {
+				background: none;
+				text-decoration: none;
+				color: red !important;
+			}
+		}
+	}
+
+	td {
+		padding: pem( 10 ) pem( 12 );
+		&.actions {
+			padding-top: pem( 12 );
+			padding-bottom: pem( 12 );
+		}
+	}
+
+	// Variations
+	td.product-name dl.variation {
+		font-size: pem( 12 );
+		line-height: normal;
+		padding-top: 2px;
+		dd, dt {
+			margin: 0;
+			padding: 0;
+		}
+		dt {
+			padding-right: 3px;
+		}
+		dt:before {
+			content: "-";
+			display: inline-block;
+			margin-right: 3px;
+		}
+	}
+
+}
+
+// Cart buttons
+.woocommerce .shop_table.cart .button,
+.woocommerce .shop_table.cart input.button {
+	height: 30px;
+	line-height: 30px;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important; 
+}
+
+// Coupon
+#add_payment_method table.cart td.actions .coupon .input-text,
+.woocommerce-cart table.cart td.actions .coupon .input-text,
+.woocommerce-checkout table.cart td.actions .coupon .input-text {
+	width: 140px;
+	height: 30px;
+	padding-top: 0;
+	padding-bottom: 0; 
+}
+
+// Totals
+.woocommerce .cart-collaterals,
+.woocommerce-page .cart-collaterals {
+
+	.cart_totals {
+
+		tr {
+			border-color: $borders__color;
+			padding: 0;
+		}
+
+		th {
+			padding: pem( 15 ) 0;
+			border: 0;
+			font-size: 11px;
+			letter-spacing: 1px;
+		}
+
+		td {
+			padding: pem( 15 );
+			border: 0;
+		}
+
+		tr, td, th {
+			vertical-align: middle !important;
+		}
+
+		.order-total .amount {
+			color: $body__color;
+			//padding: 0 4px;
+			//border: 1px solid $body__color;
+		}
+
+	}
+
+}
+
+// Empty cart
+.cart-empty {
+	margin-bottom: pem( 10 );
+}

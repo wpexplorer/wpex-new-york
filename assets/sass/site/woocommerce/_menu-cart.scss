@@ -1,0 +1,18 @@
+/*--------------------------------------------------------------
+### WooCommerce > Menu Cart
+--------------------------------------------------------------*/
+.wpex-main-menu {
+
+	.wpex-menu-cart-total {
+
+		.fa {
+			margin-right: 0.8em;
+			.rtl & {
+				margin-right: 0;
+				margin-left: pem( 7 );
+			}
+		}
+
+	}
+
+}

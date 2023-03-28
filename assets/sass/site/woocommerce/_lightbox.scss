@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+### WooCommerce > Lightbox
+--------------------------------------------------------------*/
+div.pp_overlay {
+	@include opacity( 0.45 !important );
+}
+
+div.pp_woocommerce div.ppt {
+	visibility: hidden;
+	opacity: 0;
+	height: 0;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 0;
+}
+
+div.pp_woocommerce .pp_gallery ul li {
+	a {
+		border-color: rgba( 0, 0, 0, 0.15 );
+		@include border-radius( 0 );
+		@include box-shadow( none );
+		@include transition( $transition__speed );
+	}
+	a:hover,
+	&.selected a {
+		border-color: rgba( 0, 0, 0, 0.2 );
+	}
+}

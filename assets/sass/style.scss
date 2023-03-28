@@ -1,0 +1,68 @@
+/*!
+Theme Name: WPEX New York
+Theme URI: https://themeforest.net/item/new-york-wordpress-blog-shop-theme/19185945
+Author: WPExplorer
+Author URI: https://www.wpexplorer.com
+Description: New York premium WordPress theme.
+Version: 2.5
+License: Custom license
+License URI: http://themeforest.net/licenses/terms/regular
+Text Domain: wpex-new-york
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Accessability
+# Layout
+# Grids
+# Typography
+# Elements
+# Forms
+# Buttons
+# Alignments
+# WordPress Core
+# Gutenberg
+# Site
+    ## Header
+    ## Menus
+    ## Widget Areas
+    ## Modules
+    ## Home
+    ## Archives
+    ## Page
+    ## Entry
+    ## Post
+    ## Widgets
+    ## Footer
+    ## Templates
+    ## 404
+    ## Search Results
+    ## WooCommerce
+    ## Responsive
+# Plugins
+# Lib
+
+--------------------------------------------------------------*/
+
+// FUNCTIONS / VARIABLES / MIXINS
+@import "functions";
+@import "variables";
+@import "mixins";
+
+// CSS
+@import "normalize";
+@import "accessibility";
+@import "layout";
+@import "grids";
+@import "typography/typography";
+@import "elements";
+@import "forms/forms";
+@import "buttons";
+@import "alignments";
+@import "wordpress";
+@import "gutenberg";
+@import "site/site";
+@import "plugins/plugins";
+@import "lib/lib";

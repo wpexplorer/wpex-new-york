@@ -1,0 +1,26 @@
+/* Widgets > RSS Feed */
+.widget_rss  {
+
+	.rss-widget-icon {
+	    display: none;
+	}
+
+	li {
+	    margin: 0 0 pem( 10 );
+	}
+
+	.rsswidget {
+	    font-weight: bold
+	}
+
+	.rss-date {
+		padding-left: pem( 4 );
+	    @include opacity( 0.6 );
+	}
+
+	.rssSummary {
+	    padding: pem( 5 ) 0;
+	    font-family: $font-family__secondary;
+	}
+
+}

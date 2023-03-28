@@ -1,0 +1,15 @@
+/*--------------------------------------------------------------
+## Post
+--------------------------------------------------------------*/
+.wpex-post-content {
+	margin-bottom: $elements__bottom-margin;
+}
+
+@import "media";
+@import "slider";
+@import "title";
+@import "meta";
+@import "tags";
+@import "share";
+@import "author-box";
+@import "related";
