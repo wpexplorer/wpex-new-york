@@ -1,5 +1,5 @@
 === WPEX New York ===
-Contributors: wordpressdotorg
+Contributors: wpexplorer
 Requires at least: 6.1
 Tested up to: 6.2
 Requires PHP: 7.4
