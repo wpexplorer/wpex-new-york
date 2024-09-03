@@ -3,14 +3,20 @@ Contributors: wpexplorer
 Requires at least: 6.1
 Tested up to: 6.2
 Requires PHP: 7.4
-Stable tag: 3.0
+Stable tag: 3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
+WPEX New York is a free theme for blogs with WooCommerce support.
 
-WPEX New York is a free theme by WPExplorer.com
+== Changelog ==
 
+= 3.1 =
+* Added footer copyright customizer settings.
+* Added Aspect ratio to the homepage carousel.
+* Updated default footer copyright.
+* Fixed debug errors.
 
 == Copyright ==
 

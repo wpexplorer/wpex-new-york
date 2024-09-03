@@ -4,11 +4,10 @@
  *
  * @link   http://codex.wordpress.org/Function_Reference/register_sidebar
  *
- * @package   New York WordPress Theme
- * @author    Alexander Clarke
- * @copyright Copyright (c) 2015, WPExplorer.com
- * @link      http://www.wpexplorer.com
- * @since     1.0.0
+ * @package New York WordPress Theme
+ * @author  WPExplorer
+ * @link    http://www.wpexplorer.com
+ * @since   1.0.0
  */
 
 if ( ! function_exists( 'wpex_register_sidebars' ) ) {

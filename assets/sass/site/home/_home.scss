@@ -38,6 +38,8 @@
         img {
             display: block;
             width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
             @include transition( all 0.6s );
         }
 

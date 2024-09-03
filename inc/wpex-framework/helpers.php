@@ -2,7 +2,7 @@
 /**
  * Core functions used for the theme
  *
- * @author    Alexander Clarke
+ * @author    WPExplorer
  * @copyright Copyright (c) 2015, WPExplorer.com
  * @link      http://www.wpexplorer.com
  * @since     1.0.0
@@ -641,10 +641,13 @@ function wpex_target_blank( $target = '' ) {
  * @since 1.0.0
  */
 function wpex_sanitize( $data = '', $type = null ) {
+	if ( ! $data && '0' !== $data ) {
+		return;
+	}
 
 	// Advertisement
 	if ( 'advertisement' == $type ) {
-		return $data;
+		return wp_kses_post( $data );
 	}
 
 	// URL

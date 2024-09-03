@@ -2,11 +2,10 @@
 /**
  * Configures Translators (WPMl, Polylang, etc)
  *
- * @package   New York WordPress Theme
- * @author    Alexander Clarke
- * @copyright Copyright (c) 2015, WPExplorer.com
- * @link      http://www.wpexplorer.com
- * @since     1.0.0
+ * @package New York WordPress Theme
+ * @author  WPExplorer
+ * @link    http://www.wpexplorer.com
+ * @since   1.0.0
  */
 
 add_filter( 'wpex_register_theme_mod_strings', function() {

@@ -2,11 +2,10 @@
 /**
  * Footer settings
  *
- * @package   New York WordPress Theme
- * @author    Alexander Clarke
- * @copyright Copyright (c) 2015, WPExplorer.com
- * @link      http://www.wpexplorer.com
- * @since     1.0.0
+ * @package New York WordPress Theme
+ * @author  WPExplorer
+ * @link    http://www.wpexplorer.com
+ * @since   1.0.0
  */
 
 // Prevent direct file access
@@ -17,6 +16,14 @@ if ( ! defined ( 'ABSPATH' ) ) {
 $panels['general']['sections']['footer'] = array(
 	'title' => esc_html__( 'Footer', 'wpex-new-york' ),
 	'settings' => array(
+		array(
+			'id' => 'footer_copy',
+			'sanitize_callback' => 'wp_kses_post',
+			'control' => array(
+				'label' => esc_html__( 'Custom Footer Copyright Text', 'wpex-new-york' ),
+				'type' => 'textarea',
+			),
+		),
 		array(
 			'id' => 'footer_widget_columns',
 			'default' => 'none',

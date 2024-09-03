@@ -2,7 +2,7 @@
 /**
  * Main Customizer functions
  *
- * @author    Alexander Clarke
+ * @author    WPExplorer
  * @copyright Copyright (c) 2015, WPExplorer.com
  * @link      http://www.wpexplorer.com
  * @since     1.0.0
@@ -135,13 +135,11 @@ if ( ! class_exists( 'WPEX_Customizer' ) ) {
 					// Loop through section settings and add settings
 					$control_priority   = 0;
 					foreach ( $section['settings'] as $setting ) {
-
 						$control_priority++;
-
 						$setting_id         = isset( $setting['id'] ) ? $prefix .'_'. $setting['id'] : '';
 						$transport          = isset( $setting['transport'] ) ? $setting['transport'] : 'refresh';
 						$default            = isset( $setting['default'] ) ? $setting['default'] : wpex_get_theme_mod_default( $setting['id'] );
-						$sanitize_callback  = isset( $setting['sanitize_callback'] ) ? $setting['sanitize_callback'] : false;
+						$sanitize_callback  = isset( $setting['sanitize_callback'] ) ? $setting['sanitize_callback'] : 'sanitize_text_field';
 						$label              = isset( $setting['control']['label'] ) ? $setting['control']['label'] : '';
 						$control_desc       = isset( $setting['control']['desc'] ) ? $setting['control']['desc'] : '';
 						$type               = isset( $setting['control']['type'] ) ? $setting['control']['type'] : 'text';

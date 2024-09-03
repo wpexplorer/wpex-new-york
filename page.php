@@ -6,11 +6,10 @@
  * Please note that this is the WordPress construct of pages and that other
  * 'pages' on your WordPress site will use a different template.
  *
- * @package   New York WordPress Theme
- * @author    Alexander Clarke
- * @copyright Copyright (c) 2015, WPExplorer.com
- * @link      http://www.wpexplorer.com
- * @since     1.0.0
+ * @package New York WordPress Theme
+ * @author  WPExplorer
+ * @link    http://www.wpexplorer.com
+ * @since   1.0.0
  */
 
 // Exit if accessed directly

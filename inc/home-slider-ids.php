@@ -2,11 +2,10 @@
 /**
  * Exclude ID's on the homepage
  *
- * @package   New York WordPress Theme
- * @author    Alexander Clarke
- * @copyright Copyright (c) 2015, WPExplorer.com
- * @link      http://www.wpexplorer.com
- * @since     1.0.0
+ * @package New York WordPress Theme
+ * @author  WPExplorer
+ * @link    http://www.wpexplorer.com
+ * @since   1.0.0
  */
 
 function wpex_get_home_slider_ids() {

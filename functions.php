@@ -15,12 +15,10 @@
  *
  * Text Domain: wpex-new-york
  *
- * @package   New York WordPress Theme
- * @author    Alexander Clarke
- * @copyright Copyright (c) 2015, WPExplorer.com
- * @link      https://www.wpexplorer.com
- * @since     1.0.0
- *
+ * @package New York WordPress Theme
+ * @author  WPExplorer
+ * @link    http://www.wpexplorer.com
+ * @since   1.0.0
  */
 
 // Exit if accessed directly

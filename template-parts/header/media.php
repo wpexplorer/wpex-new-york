@@ -3,8 +3,7 @@
  * Outputs the header media
  *
  * @package   New York WordPress Theme
- * @author    Alexander Clarke
- * @copyright Copyright (c) 2015, WPExplorer.com
+ * @author    WPExplorer
  * @link      http://www.wpexplorer.com
  * @since     1.2.0
  */

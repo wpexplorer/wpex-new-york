@@ -2,7 +2,7 @@
 /**
  * Adds thumbnails to dashboard for posts
  *
- * @author    Alexander Clarke
+ * @author    WPExplorer
  * @copyright Copyright (c) 2015, WPExplorer.com
  * @link      http://www.wpexplorer.com
  * @since     1.0.0
